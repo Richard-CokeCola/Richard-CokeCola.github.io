@@ -100,11 +100,11 @@ input, select, textarea {
 	}
 
 	h1 {
-		text-transform: lowercase;
+		/*text-transform: lowercase;*/
 	}
 
 	h2 {
-		text-transform: lowercase;
+		/*text-transform: lowercase;*/
 		font-size: 1.6em;
 		letter-spacing: -1px;
 		margin-bottom: 1em;
@@ -1492,7 +1492,7 @@ input, select, textarea {
 		padding: 15px 25px 15px 25px;
 		background-color: #007b9d;
 		border-radius: 10px;
-		text-transform: lowercase;
+		/*text-transform: lowercase;*/
 		text-decoration: none;
 		color: #fff;
 		font-size: 1.2em;
@@ -1559,7 +1559,7 @@ input, select, textarea {
 			right: 40px;
 			top: 1px;
 			line-height: 84px;
-			text-transform: lowercase;
+			/*text-transform: lowercase;*/
 			font-size: 1.3em;
 			letter-spacing: -1px;
 		}
@@ -1623,7 +1623,7 @@ input, select, textarea {
 			font-size: 1.6em;
 			color: #fff;
 			letter-spacing: -1px;
-			text-transform: lowercase;
+			/*text-transform: lowercase;*/
 			opacity: 0.8;
 		}
 
