@@ -1,5 +1,5 @@
 ## Welcome to my blog!
-This is my beta test of my blog.
+This is the beta test of my blog.
 
 You can use the [editor on GitHub](https://github.com/Richard-CokeCola/Richard-CokeCola.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
