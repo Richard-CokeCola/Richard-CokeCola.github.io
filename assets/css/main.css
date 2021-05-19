@@ -2095,6 +2095,7 @@ input, select, textarea {
 			text-transform: initial; 
 			color: #F00;
 			font-size: 2em;
+			position: relative;
 			letter-spacing: 0.25em;
 		}
 
