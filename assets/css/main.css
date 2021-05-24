@@ -2524,7 +2524,7 @@ input, select, textarea {
 		/* Form */
 
 			form ul.actions {
-				text-align: center;
+				text-align: left;
 			}
 
 		/* Feature List */
