@@ -1,4 +1,3 @@
-@@ -1 +1,37 @@
 # Richard-CokeCola.github.io
 ## Welcome to GitHub Pages
 
