@@ -5,7 +5,7 @@ You can use the [editor on GitHub](https://github.com/Richard-CokeCola/Richard-C
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### What features need to added:
+### New fetures I plan to add to my blog:
 * tags
 * search
 
