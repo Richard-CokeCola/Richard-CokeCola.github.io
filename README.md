@@ -1,5 +1,5 @@
 # Richard-CokeCola.github.io
-## Welcome to GitHub Pages
+## Welcome to Richard's blog. Some of my work and interest will be shown here.
 
 You can use the [editor on GitHub](https://github.com/Richard-CokeCola/Richard-CokeCola.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
