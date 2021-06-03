@@ -6,6 +6,7 @@ theme: hugo-theme-mini
 # for exampleSite only, you may need to delete the line: `themesDir: ../../` 
 # https://themes.gohugo.io/hugo-theme-cactus-plus/
 # hugo -t mini
+# https://github.com/nodejh/hugo-theme-mini
 
 
 hasCJKLanguage: true
