@@ -1,5 +1,4 @@
 baseURL = "https://richard-cokecola.github.io/"
 languageCode = "en-us"
-title = "Richard's blog"
-
-theme="terminal-hugo"
+title = "Richard's_blog"
+theme="mini"
