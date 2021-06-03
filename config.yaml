@@ -35,9 +35,9 @@ social:
 # Site parameters
 params:
   # Site Author
-  author: Author
+  author: Richard
   # Author biography
-  bio: Software Engineer
+  bio: An engineer who is interested in AI, music, cooking, and some other things.
   # Site Description, used in HTML meat
   description: My Blog
   enableRSS: true
