@@ -1,6 +1,6 @@
-baseURL: https://example.com
+baseURL: https://richard-cokecola.github.io/
 languageCode: en-us
-title: Hugo
+title: Richard's blog
 theme: hugo-theme-mini
 
 # for exampleSite only, you may need to delete the line: `themesDir: ../../` 
