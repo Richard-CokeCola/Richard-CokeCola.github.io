@@ -26,7 +26,7 @@ markup:
 # Social links in footer, support github,twitter,stackoverflow,facebook
 social:
   # e.g.
-  github: your-github-link
+  github: https://github.com/Richard-CokeCola
   twitter: your-github-link
   stackoverflow: your-github-link
   # facebook: your-facebook-link
@@ -39,7 +39,7 @@ params:
   # Author biography
   bio: An engineer who is interested in AI, music, cooking, and some other things.
   # Site Description, used in HTML meat
-  description: My Blog
+  description: Richard's Blog
   enableRSS: true
   # To enable comments, you may need to set `disqusShortname`
   enableComments: true
@@ -50,7 +50,7 @@ params:
   home: '' # Default: Home
   about: '' # Default: About
   archive: '' # Default: Archive
-  tags: '' # Default: Tags
+  tags: 'AI, Food' # Default: Tags
   subscribe: '' # Default: Subscribe
   olderPosts: '' # Default: Older Posts
   newerPosts: '' # Default: Newer Posts
