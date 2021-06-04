@@ -56,14 +56,14 @@ What you need: 🔗 A Jetson nano (If you are using other Jetson developer kit f
         </span>
         <span>
           
-            199 words
+            296 words
           
         </span>
         <span class="split">
           ·
         </span>
         <span>
-          1 minute read
+          2 minute read
         </span>
     </div>
 
@@ -104,7 +104,23 @@ export /usr/local/bin/virtualenvwrapper.sh
 <span style="color:#75715e"># A virtual developing enviroment named &#34;yolov5&#34; has been created</span>
 </code></pre></div><p><strong>Start working on the virtual developing enviroment you just created:</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">workon yolov5
-</code></pre></div><h4 id="reference"><em>Reference:</em> <a href="#reference" class="anchor">🔗</a></h4><ol>
+<span style="color:#75715e"># If &#34;(yolov5)&#34; appeared in front of your username, this means it worked</span>
+</code></pre></div><p><strong>Download YOLOv5:</strong></p>
+<p>There is one tricky part to run YOLOv5 on Jetson developer kit which is you <strong>MUST USE YOLOV5 V3.1</strong> otherwise it won&rsquo;t work based on my experiments. However, I also found people posted that master branch worked well on Jetson as well. If you want to try the master branch:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/ultralytics/yolov5.git
+</code></pre></div><p>I used another method and it worded well. First download YOLOv5 v3.1 from <a 
+    href="https://github.com/ultralytics/yolov5/archive/refs/tags/v3.1.zip"
+    
+    
+     
+      target="_blank" 
+      rel="noopener"
+    
+>
+    this cite
+</a> and then copy to your vitual enviroment folder named yolov5.</p>
+<p><strong>Install all the softwares:</strong></p>
+<h4 id="reference"><em>Reference:</em> <a href="#reference" class="anchor">🔗</a></h4><ol>
 <li><a href="https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn">https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn</a></li>
 <li><a href="https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules">https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules</a></li>
 <li><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit">https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit</a></li>
