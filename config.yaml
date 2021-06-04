@@ -55,7 +55,7 @@ params:
   subscribe: '' # Default: Subscribe
   olderPosts: '' # Default: Older Posts
   newerPosts: '' # Default: Newer Posts
-  copyright: '' # Default: © Copyright 2021 ❤️ author
+  copyright: ' ' # Default: © Copyright 2021 ❤️ author
   title404: '' # Default: 404 - Page Not Found
   subtitle404: '' # Default: The content you're looking for doesn't seem to exist.
   readMore: '' # Default: Read More
