@@ -120,25 +120,25 @@ export /usr/local/bin/virtualenvwrapper.sh
     YOLOv5 v3.1 offocial website
 </a> and then copy to your vitual enviroment folder named yolov5.</p>
 <p><strong>Install all the softwares:</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-cache show nvidia-jetpack
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sudo apt<span style="color:#f92672">-</span>cache show nvidia<span style="color:#f92672">-</span>jetpack
 <span style="color:#75715e"># Install pytorch</span>
-wget https://nvidia.box.com/shared/static/9eptse6jyly1ggt9axbja2yrmj6pbarc.whl -O torch-1.6.0-cp36-cp36m-linux_aarch64.whl
-sudo apt-get install python3-pip libopenblas-base libopenmpi-dev 
+wget https:<span style="color:#f92672">//</span>nvidia<span style="color:#f92672">.</span>box<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>shared<span style="color:#f92672">/</span>static<span style="color:#f92672">/</span><span style="color:#ae81ff">9</span>eptse6jyly1ggt9axbja2yrmj6pbarc<span style="color:#f92672">.</span>whl <span style="color:#f92672">-</span>O torch<span style="color:#f92672">-</span><span style="color:#ae81ff">1.6</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0</span><span style="color:#f92672">-</span>cp36<span style="color:#f92672">-</span>cp36m<span style="color:#f92672">-</span>linux_aarch64<span style="color:#f92672">.</span>whl
+sudo apt<span style="color:#f92672">-</span>get install python3<span style="color:#f92672">-</span>pip libopenblas<span style="color:#f92672">-</span>base libopenmpi<span style="color:#f92672">-</span>dev 
 pip3 install Cython
-pip3 install numpy torch-1.6.0-cp36-cp36m-linux_aarch64.whl
+pip3 install numpy torch<span style="color:#f92672">-</span><span style="color:#ae81ff">1.6</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0</span><span style="color:#f92672">-</span>cp36<span style="color:#f92672">-</span>cp36m<span style="color:#f92672">-</span>linux_aarch64<span style="color:#f92672">.</span>whl
 
 <span style="color:#75715e"># Install torchvision</span>
-sudo apt-get install libjpeg-dev zlib1g-dev
-git clone --branch v0.7.0 https://github.com/pytorch/vision torchvision
+sudo apt<span style="color:#f92672">-</span>get install libjpeg<span style="color:#f92672">-</span>dev zlib1g<span style="color:#f92672">-</span>dev
+git clone <span style="color:#f92672">--</span>branch v0<span style="color:#f92672">.</span><span style="color:#ae81ff">7.0</span> https:<span style="color:#f92672">//</span>github<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>pytorch<span style="color:#f92672">/</span>vision torchvision
 cd torchvision
-export BUILD_VERSION<span style="color:#f92672">=</span>0.7.0 
-sudo python setup.py install
+export BUILD_VERSION<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0</span> 
+sudo python setup<span style="color:#f92672">.</span>py install
 
 <span style="color:#75715e">#Link native OpenCV to the virtual enviroment</span>
-sudo find / -name cv2 <span style="color:#75715e">#find where the native OpenCV is</span>
+sudo find <span style="color:#f92672">/</span> <span style="color:#f92672">-</span>name cv2 <span style="color:#75715e">#find where the native OpenCV is</span>
 <span style="color:#75715e"># It should be in /usr/lib/python3.6/dist-packages/cv2/python-3.6/</span>
 <span style="color:#75715e"># You should find the .so file called &#39;cv2.cpython-36m-aarch64-linux-gnu.so&#39;</span>
-ln -s /usr/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ~/.virtualenvs/<span style="color:#f92672">{</span>your env<span style="color:#f92672">}</span>/cv2.cpython-36m-aarch64-linux-gnu.so
+ln <span style="color:#f92672">-</span>s <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>lib<span style="color:#f92672">/</span>python3<span style="color:#f92672">.</span><span style="color:#ae81ff">6</span><span style="color:#f92672">/</span>dist<span style="color:#f92672">-</span>packages<span style="color:#f92672">/</span>cv2<span style="color:#f92672">/</span>python<span style="color:#f92672">-</span><span style="color:#ae81ff">3.6</span><span style="color:#f92672">/</span>cv2<span style="color:#f92672">.</span>cpython<span style="color:#f92672">-</span><span style="color:#ae81ff">36</span>m<span style="color:#f92672">-</span>aarch64<span style="color:#f92672">-</span>linux<span style="color:#f92672">-</span>gnu<span style="color:#f92672">.</span>so <span style="color:#f92672">~/.</span>virtualenvs<span style="color:#f92672">/</span>{your env}<span style="color:#f92672">/</span>cv2<span style="color:#f92672">.</span>cpython<span style="color:#f92672">-</span><span style="color:#ae81ff">36</span>m<span style="color:#f92672">-</span>aarch64<span style="color:#f92672">-</span>linux<span style="color:#f92672">-</span>gnu<span style="color:#f92672">.</span>so
 </code></pre></div><p>After this, check if the installation is succeed:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python
 &gt;&gt;&gt; import cv2
