@@ -39,10 +39,13 @@ params:
   # Site Description, used in HTML meat
   description: My Blog
   enableRSS: true
+  
   # To enable comments, you may need to set `disqusShortname`
   enableComments: true
   # To enable comments, you may need to set `googleAnalytics`
   enableGoogleAnalytics: true
+  showLatestPosts = true
+
 
   # Optional
   home: '' # Default: Home
