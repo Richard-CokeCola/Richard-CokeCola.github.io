@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI on Richard&#39;s blog</title>
+    <title>AI on Richard</title>
     <link>https://richard-cokecola.github.io/tags/ai/</link>
-    <description>Recent content in AI on Richard&#39;s blog</description>
+    <description>Recent content in AI on Richard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Jun 2021 09:01:47 +0800</lastBuildDate><atom:link href="https://richard-cokecola.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
