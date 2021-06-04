@@ -1,0 +1,10 @@
+baseURL = "https://richard-cokecola.github.io/"
+languageCode = "en-us"
+title = "Richard"
+theme="mini"
+googleAnalytics = "G-HQLWYE4FVQ"
+copyright = "xxx"
+
+[author]
+    name = "nodejh"
+    homepage = "https://github.com/Richard-CokeCola"
