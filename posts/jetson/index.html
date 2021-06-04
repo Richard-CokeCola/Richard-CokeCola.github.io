@@ -56,7 +56,7 @@ What you need: 🔗 A Jetson nano (If you are using other Jetson developer kit f
         </span>
         <span>
           
-            298 words
+            368 words
           
         </span>
         <span class="split">
@@ -120,7 +120,24 @@ export /usr/local/bin/virtualenvwrapper.sh
     YOLOv5 v3.1 offocial website
 </a> and then copy to your vitual enviroment folder named yolov5.</p>
 <p><strong>Install all the softwares:</strong></p>
-<h4 id="reference"><em>Reference:</em> <a href="#reference" class="anchor">🔗</a></h4><ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-cache show nvidia-jetpack
+<span style="color:#75715e"># Install pytorch</span>
+wget https://nvidia.box.com/shared/static/9eptse6jyly1ggt9axbja2yrmj6pbarc.whl -O torch-1.6.0-cp36-cp36m-linux_aarch64.whl
+sudo apt-get install python3-pip libopenblas-base libopenmpi-dev 
+pip3 install Cython
+pip3 install numpy torch-1.6.0-cp36-cp36m-linux_aarch64.whl
+
+<span style="color:#75715e"># Install torchvision</span>
+sudo apt-get install libjpeg-dev zlib1g-dev
+git clone --branch v0.7.0 https://github.com/pytorch/vision torchvision
+cd torchvision
+export BUILD_VERSION<span style="color:#f92672">=</span>0.7.0 
+sudo python setup.py install
+
+<span style="color:#75715e">#Link native OpenCV to the virtual enviroment</span>
+sudo find / -name cv2 <span style="color:#75715e">#find where the native OpenCV is</span>
+<span style="color:#75715e"># It should be in /usr/lib/python3.6/dist-packages/cv2/python-3.6/</span>
+</code></pre></div><h4 id="reference"><em>Reference:</em> <a href="#reference" class="anchor">🔗</a></h4><ol>
 <li><a href="https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn">https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn</a></li>
 <li><a href="https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules">https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules</a></li>
 <li><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit">https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit</a></li>
