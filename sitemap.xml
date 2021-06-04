@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://richard-cokecola.github.io/tags/ai/</loc>
+    <lastmod>2021-06-04T09:01:47+08:00</lastmod>
+  </url><url>
+    <loc>https://richard-cokecola.github.io/tags/jetson-developer-kit/</loc>
+    <lastmod>2021-06-04T09:01:47+08:00</lastmod>
+  </url><url>
+    <loc>https://richard-cokecola.github.io/posts/</loc>
+    <lastmod>2021-06-04T09:01:47+08:00</lastmod>
+  </url><url>
+    <loc>https://richard-cokecola.github.io/</loc>
+    <lastmod>2021-06-04T09:01:47+08:00</lastmod>
+  </url><url>
+    <loc>https://richard-cokecola.github.io/posts/jetson/</loc>
+    <lastmod>2021-06-04T09:01:47+08:00</lastmod>
+  </url><url>
+    <loc>https://richard-cokecola.github.io/tags/</loc>
+    <lastmod>2021-06-04T09:01:47+08:00</lastmod>
+  </url><url>
     <loc>https://richard-cokecola.github.io/about/</loc>
     <lastmod>2021-06-03T16:44:06+08:00</lastmod>
   </url><url>
-    <loc>https://richard-cokecola.github.io/</loc>
-    <lastmod>2021-06-03T16:44:06+08:00</lastmod>
-  </url><url>
-    <loc>https://richard-cokecola.github.io/tags/food/</loc>
-    <lastmod>2021-06-03T15:46:13+08:00</lastmod>
-  </url><url>
-    <loc>https://richard-cokecola.github.io/posts/</loc>
+    <loc>https://richard-cokecola.github.io/tags/amazing-homemade-food/</loc>
     <lastmod>2021-06-03T15:46:13+08:00</lastmod>
   </url><url>
     <loc>https://richard-cokecola.github.io/posts/friedchicken/</loc>
-    <lastmod>2021-06-03T15:46:13+08:00</lastmod>
-  </url><url>
-    <loc>https://richard-cokecola.github.io/tags/</loc>
     <lastmod>2021-06-03T15:46:13+08:00</lastmod>
   </url><url>
     <loc>https://richard-cokecola.github.io/posts/myfirstpost/</loc>

@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Richard&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Jun 2021 15:46:13 +0800</lastBuildDate><atom:link href="https://richard-cokecola.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Jun 2021 09:01:47 +0800</lastBuildDate><atom:link href="https://richard-cokecola.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Run YOLO v5 on Jetson nano step by step tutorial</title>
+      <link>https://richard-cokecola.github.io/posts/jetson/</link>
+      <pubDate>Fri, 04 Jun 2021 09:01:47 +0800</pubDate>
+      
+      <guid>https://richard-cokecola.github.io/posts/jetson/</guid>
+      <description>What&amp;rsquo;s the goal? 🔗To run YOLOv5 on jetson developer kit to achieve real-time object detection.
+What you need: 🔗 A Jetson nano (If you are using other Jetson developer kit from Nvidia, I am sure you can take this as reference as well.) A SD card and power suply which meets the needs. Another computer or laptop with internet connection and built-in SD card slot or an adapter. A monitor with HDMI port, a USB mouse and a USB keyboard.</description>
+    </item>
+    
     <item>
       <title>Richard&#39;s fried chicken recipe</title>
       <link>https://richard-cokecola.github.io/posts/friedchicken/</link>
@@ -14,7 +24,7 @@
       
       <guid>https://richard-cokecola.github.io/posts/friedchicken/</guid>
       <description>Why fried chicken 🔗Come on, man.
-What is the definition of good fried chicken 🔗 Looking good (golden shell outside) Juicy inside Chicken meet has strong mixed and balanced taste even deep inside  Raw materials 🔗 Chicken leg, thigh, breast, or whatever you like. Oil (A LOT) Seasoning:  Sea salt (if you do not have sea salt then normal salt) Chinese 13 Spices Mix (王守義十三香) Curry power Mixed Italian herbs Soy sauce Dark soy sauce Egg Self-raising flour Black pepper (optional) Garlic (optional) Ginger (optional)    Process 🔗Curing 🔗 Wash all the chicken first and dry the extra water, put all the chicken in a big bowl.</description>
+What is the definition of good fried chicken 🔗 Looking good (golden shell outside) Juicy inside Chicken meet has strong mixed and balanced taste even deep inside  Raw materials 🔗 Chicken leg, thigh, breast, or whatever you like. Oil (A LOT) Seasoning:  Sea salt (if you do not have sea salt then normal salt) Chinese 13 Spices Mix (王守義十三香) Curry power Mixed Italian herbs Soy sauce Dark soy sauce Egg Self-raising flour (中筋面粉+少量泡打粉) Black pepper (optional) Garlic (optional) Ginger (optional)    Process 🔗Curing 🔗 Wash all the chicken first and dry the extra water, put all the chicken in a big bowl.</description>
     </item>
     
     <item>
