@@ -56,7 +56,7 @@ What you need: 🔗 A Jetson nano (If you are using other Jetson developer kit f
         </span>
         <span>
           
-            368 words
+            404 words
           
         </span>
         <span class="split">
@@ -106,7 +106,7 @@ export /usr/local/bin/virtualenvwrapper.sh
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">workon yolov5
 <span style="color:#75715e"># If &#34;(yolov5)&#34; appeared in front of your username, this means it worked</span>
 </code></pre></div><p><strong>Download YOLOv5:</strong></p>
-<p>There is one tricky part to run YOLOv5 on Jetson developer kit which is you <strong>MUST USE YOLOV5 V3.1</strong> otherwise it won&rsquo;t work based on my experiments. However, I also found people posted that master branch worked well on Jetson as well. If you want to try the master branch:</p>
+<p>There is one tricky part to run YOLOv5 on Jetson developer kit which is you <strong>MUST USE YOLOV5 V3.1</strong> otherwise it won&rsquo;t work based on my experiments. However, I also found people posted that YOLOv5 master branch worked well on Jetson as well. If you want to try the YOLOv5 master branch:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/ultralytics/yolov5.git
 </code></pre></div><p>I used another method and it worded well. First download YOLOv5 v3.1 from <a 
     href="https://github.com/ultralytics/yolov5/archive/refs/tags/v3.1.zip"
@@ -137,6 +137,13 @@ sudo python setup.py install
 <span style="color:#75715e">#Link native OpenCV to the virtual enviroment</span>
 sudo find / -name cv2 <span style="color:#75715e">#find where the native OpenCV is</span>
 <span style="color:#75715e"># It should be in /usr/lib/python3.6/dist-packages/cv2/python-3.6/</span>
+<span style="color:#75715e"># You should find the .so file called &#39;cv2.cpython-36m-aarch64-linux-gnu.so&#39;</span>
+ln -s /usr/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ~/.virtualenvs/<span style="color:#f92672">{</span>your env<span style="color:#f92672">}</span>/cv2.cpython-36m-aarch64-linux-gnu.so
+</code></pre></div><p>After this, check if the installation is succeed:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python
+&gt;&gt;&gt; import cv2
+&gt;&gt;&gt; cv2.__version__
+<span style="color:#75715e"># Press Ctrl+z to exit python</span>
 </code></pre></div><h4 id="reference"><em>Reference:</em> <a href="#reference" class="anchor">🔗</a></h4><ol>
 <li><a href="https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn">https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn</a></li>
 <li><a href="https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules">https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules</a></li>
