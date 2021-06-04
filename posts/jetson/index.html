@@ -89,22 +89,22 @@ What you need: 🔗 A Jetson nano (If you are using other Jetson developer kit f
     Nvidia official set up tutorial
 </a> for more information.</p>
 <h4 id="setting-up-the-enviroment">Setting up the enviroment: <a href="#setting-up-the-enviroment" class="anchor">🔗</a></h4><p><strong>Install virtualenv and virtualenvwrapper</strong> using:</p>
-<pre><code># install pip first 
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># install pip first </span>
 apt-get install python3-pip
 sudo pip3 install virtualenv virtualenvwrapper
-</code></pre><p><strong>Modify the enviroment variable:</strong></p>
-<pre><code># Install an editor first
-sudo apt install nano #you can also choose other editor
+</code></pre></div><p><strong>Modify the enviroment variable:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Install an editor first</span>
+sudo apt install nano <span style="color:#75715e">#you can also choose other editor</span>
 nano ~/.bashrc
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME<span style="color:#f92672">=</span>$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON<span style="color:#f92672">=</span>/usr/bin/python3
 export /usr/local/bin/virtualenvwrapper.sh
-</code></pre><p><strong>Set virtual developing enviroment:</strong></p>
-<pre><code>mkvirtualenv yolov5 
-# A virtual developing enviroment named &quot;yolov5&quot; has been created
-</code></pre><p><strong>Start working on the virtual developing enviroment you just created:</strong></p>
-<pre><code>workon yolov5
-</code></pre><h4 id="reference"><em>Reference:</em> <a href="#reference" class="anchor">🔗</a></h4><ol>
+</code></pre></div><p><strong>Set virtual developing enviroment:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkvirtualenv yolov5 
+<span style="color:#75715e"># A virtual developing enviroment named &#34;yolov5&#34; has been created</span>
+</code></pre></div><p><strong>Start working on the virtual developing enviroment you just created:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">workon yolov5
+</code></pre></div><h4 id="reference"><em>Reference:</em> <a href="#reference" class="anchor">🔗</a></h4><ol>
 <li><a href="https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn">https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn</a></li>
 <li><a href="https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules">https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules</a></li>
 <li><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit">https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit</a></li>
