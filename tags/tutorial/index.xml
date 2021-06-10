@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jetson developer kit on Richard&#39;s Lullaby</title>
-    <link>https://richard-cokecola.github.io/tags/jetson-developer-kit/</link>
-    <description>Recent content in Jetson developer kit on Richard&#39;s Lullaby</description>
+    <title> tutorial  on Richard&#39;s Lullaby</title>
+    <link>https://richard-cokecola.github.io/tags/tutorial/</link>
+    <description>Recent content in  tutorial  on Richard&#39;s Lullaby</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Jun 2021 09:01:47 +0800</lastBuildDate><atom:link href="https://richard-cokecola.github.io/tags/jetson-developer-kit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Jun 2021 09:01:47 +0800</lastBuildDate><atom:link href="https://richard-cokecola.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Run YOLO v5 on Jetson developer kit step by step tutorial</title>
       <link>https://richard-cokecola.github.io/posts/run-yolo-v5-on-jetson-developer-kit-step-by-step-tutorial/</link>
