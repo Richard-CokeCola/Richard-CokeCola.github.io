@@ -69,7 +69,7 @@ if (!doNotTrack) {
         </span>
         <span>
           
-            546 words
+            584 words
           
         </span>
         <span class="split">
@@ -109,7 +109,7 @@ if (!doNotTrack) {
 <h3 id="setting-up-the-enviroment">Setting up the enviroment: <a href="#setting-up-the-enviroment" class="anchor"></a></h3><ul>
 <li><strong>Install virtualenv and virtualenvwrapper using:</strong></li>
 </ul>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># install pip first </span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># install pip first since there is no pip pre-installed</span>
 apt-get install python3-pip
 sudo pip3 install virtualenv virtualenvwrapper
 </code></pre></div><ul>
@@ -159,15 +159,21 @@ git clone https://github.com/ultralytics/yolov5.git
 <ul>
 <li><strong>Install all the softwares:</strong></li>
 </ul>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-cache show nvidia-jetpack
-<span style="color:#080;font-style:italic"># Install pytorch</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># check Jetpack version</span>
+sudo apt-cache show nvidia-jetpack
+<span style="color:#080;font-style:italic"># Install pytorch method 1</span>
 wget https://nvidia.box.com/shared/static/9eptse6jyly1ggt9axbja2yrmj6pbarc.whl -O torch-1.6.0-cp36-cp36m-linux_aarch64.whl
 sudo apt-get install python3-pip libopenblas-base libopenmpi-dev 
 pip3 install Cython
 pip3 install numpy torch-1.6.0-cp36-cp36m-linux_aarch64.whl
-
-<span style="color:#080;font-style:italic"># Install torchvision</span>
-sudo apt-get install libjpeg-dev zlib1g-dev
+</code></pre></div><p>If there are internet issues, try:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># Install pytorch method 2</span>
+sudo apt-get install python3-pip libopenblas-base libopenmpi-dev 
+pip3 install Cython
+pip3 install numpy
+pip3 install torch-1.6.0-cp36-cp36m-linux_aarch64.whl
+</code></pre></div><p>Install torchvision:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install libjpeg-dev zlib1g-dev
 git clone --branch v0.7.0 https://github.com/pytorch/vision torchvision
 <span style="color:#a2f">cd</span> torchvision
 <span style="color:#a2f">export</span> <span style="color:#b8860b">BUILD_VERSION</span><span style="color:#666">=</span>0.7.0 
@@ -218,6 +224,7 @@ Run it on a pre-recorded office video:
 <li><a href="https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn">https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn</a></li>
 <li><a href="https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules">https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules</a></li>
 <li><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit">https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/342504190">https://zhuanlan.zhihu.com/p/342504190</a></li>
 </ol>
 
     </div>
