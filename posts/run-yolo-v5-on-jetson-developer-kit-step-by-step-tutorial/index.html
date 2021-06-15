@@ -69,14 +69,14 @@ if (!doNotTrack) {
         </span>
         <span>
           
-            615 words
+            647 words
           
         </span>
         <span class="split">
           ·
         </span>
         <span>
-          3 minute read
+          4 minute read
         </span>
     </div>
 
@@ -171,15 +171,21 @@ pip3 install numpy torch-1.6.0-cp36-cp36m-linux_aarch64.whl
 sudo apt-get install python3-pip libopenblas-base libopenmpi-dev 
 pip3 install Cython
 pip3 install numpy
+<span style="color:#080;font-style:italic"># Download torch-1.6.0-cp36-cp36m-linux_aarch64.whl first and </span>
 pip3 install torch-1.6.0-cp36-cp36m-linux_aarch64.whl
-</code></pre></div><p>Install torchvision:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install libjpeg-dev zlib1g-dev
+</code></pre></div><p>Install torchvision from source:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># If you used torch 1.6, you should use torchvision 0.7</span>
+sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
 git clone --branch v0.7.0 https://github.com/pytorch/vision torchvision
 <span style="color:#a2f">cd</span> torchvision
-<span style="color:#a2f">export</span> <span style="color:#b8860b">BUILD_VERSION</span><span style="color:#666">=</span>0.7.0 
-sudo python setup.py install <span style="color:#080;font-style:italic"># If having problem here, go see key point 3 below </span>
+<span style="color:#a2f">export</span> <span style="color:#b8860b">BUILD_VERSION</span><span style="color:#666">=</span>0.7.0
+sudo python3 setup.py install 
+<span style="color:#080;font-style:italic"># If having problem here, go see key point 3 below </span>
+<span style="color:#080;font-style:italic"># This will take a while</span>
+<span style="color:#a2f">cd</span> ../
 
-<span style="color:#080;font-style:italic">#Link native OpenCV to the virtual enviroment</span>
+</code></pre></div><p>Install OpenCV:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic">#Link native OpenCV to the virtual enviroment</span>
 sudo find / -name cv2 <span style="color:#080;font-style:italic">#find where the native OpenCV is</span>
 <span style="color:#080;font-style:italic"># It should be in /usr/lib/python3.6/dist-packages/cv2/python-3.6/</span>
 <span style="color:#080;font-style:italic"># You should find the .so file called &#39;cv2.cpython-36m-aarch64-linux-gnu.so&#39;</span>
