@@ -69,7 +69,7 @@ if (!doNotTrack) {
         </span>
         <span>
           
-            647 words
+            658 words
           
         </span>
         <span class="split">
@@ -193,10 +193,27 @@ ln -s /usr/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-li
 </code></pre></div><p>After this, check if the installation is succeed:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">python
 <span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">cv2</span>
-<span style="color:#666">&gt;&gt;&gt;</span> cv2<span style="color:#666">.</span>__version__
+<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">torch</span>
+<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">torchvision</span>
+<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">print</span>(cv2<span style="color:#666">.</span>__version__)
+<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">print</span>(torch<span style="color:#666">.</span>__version__)
+<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">print</span>(torchvision<span style="color:#666">.</span>__version__)
 
 <span style="color:#080;font-style:italic"># Press Ctrl+z to exit python</span>
-</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip3 install matplotlib pillow pyyaml tensorboard tqdm scipy
+</code></pre></div><p><a 
+    href="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/env.jpg"
+    
+      title="installation succeed"
+    
+    
+     
+      target="_blank" 
+      rel="noopener"
+    
+>
+    env
+</a></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip3 install matplotlib pillow pyyaml tensorboard tqdm scipy
 </code></pre></div><p>Now, you are ready to run YOLOv5! Let&rsquo;s try running YOLOv5 on defauly images:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">python detect<span style="color:#666">.</span>py <span style="color:#666">--</span>source inference<span style="color:#666">/</span>images<span style="color:#666">/</span> <span style="color:#666">--</span>weights weights<span style="color:#666">/</span>yolov5s<span style="color:#666">.</span>pt
 </code></pre></div><p><strong>Congratulations!</strong></p>
