@@ -69,7 +69,7 @@ if (!doNotTrack) {
         </span>
         <span>
           
-            678 words
+            673 words
           
         </span>
         <span class="split">
@@ -122,7 +122,8 @@ sudo pip3 install virtualenv virtualenvwrapper
 <li><strong>Modify the enviroment variable:</strong></li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># Install an editor first</span>
-sudo apt-get -y install nano <span style="color:#080;font-style:italic">#you can also choose other editor</span>
+<span style="color:#080;font-style:italic">#you can also choose other editor</span>
+sudo apt-get -y install nano 
 mkdir <span style="color:#b8860b">$HOME</span>/.virtualenvs
 nano ~/.bashrc
 <span style="color:#080;font-style:italic"># Add following into the file</span>
@@ -144,9 +145,11 @@ nano ~/.bashrc
 <li><strong>Download YOLOv5:</strong></li>
 </ul>
 <p>There is one tricky part to run YOLOv5 on Jetson developer kit which is you <strong>MUST USE YOLOV5 V3.1</strong> otherwise it won&rsquo;t work based on my experiments. However, I also found people posted that YOLOv5 master branch worked well on Jetson as well. If you want to try the YOLOv5 master branch:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install git-all -y <span style="color:#080;font-style:italic"># install git</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># install git</span>
+apt-get install git-all -y 
 git clone https://github.com/ultralytics/yolov5.git
-<span style="color:#080;font-style:italic"># Or, you can just download YOLOv5 v3.1 from their website and copy the folder into virtual enviroment</span>
+<span style="color:#080;font-style:italic"># Or, you can just download YOLOv5 v3.1 from their website</span>
+<span style="color:#080;font-style:italic"># and copy the folder into the virtual enviroment</span>
 </code></pre></div><p>I used another method and it worded well. First download YOLOv5 v3.1 from <a 
     href="https://github.com/ultralytics/yolov5/archive/refs/tags/v3.1.zip"
     
@@ -162,33 +165,34 @@ git clone https://github.com/ultralytics/yolov5.git
 <li><strong>Install all the softwares:</strong></li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># check Jetpack version</span>
-sudo apt-cache show nvidia-jetpack
+apt-cache show nvidia-jetpack
 <span style="color:#080;font-style:italic"># Install pytorch method 1</span>
 wget https://nvidia.box.com/shared/static/9eptse6jyly1ggt9axbja2yrmj6pbarc.whl -O torch-1.6.0-cp36-cp36m-linux_aarch64.whl
-sudo apt-get install python3-pip libopenblas-base libopenmpi-dev 
+apt-get install python3-pip libopenblas-base libopenmpi-dev 
 pip3 install Cython
 pip3 install numpy torch-1.6.0-cp36-cp36m-linux_aarch64.whl
 </code></pre></div><p>If there are internet issues, try:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># Install pytorch method 2</span>
-sudo apt-get install python3-pip libopenblas-base libopenmpi-dev 
+apt-get install python3-pip libopenblas-base libopenmpi-dev 
 pip3 install Cython
 pip3 install numpy
-<span style="color:#080;font-style:italic"># Download torch-1.6.0-cp36-cp36m-linux_aarch64.whl first and </span>
+<span style="color:#080;font-style:italic"># Download torch-1.6.0-cp36-cp36m-linux_aarch64.whl first then </span>
 pip3 install torch-1.6.0-cp36-cp36m-linux_aarch64.whl
 </code></pre></div><p>Install torchvision from source:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># If you used torch 1.6, you should use torchvision 0.7</span>
-sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
+apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
 git clone --branch v0.7.0 https://github.com/pytorch/vision torchvision
 <span style="color:#a2f">cd</span> torchvision
 <span style="color:#a2f">export</span> <span style="color:#b8860b">BUILD_VERSION</span><span style="color:#666">=</span>0.7.0
-sudo python3 setup.py install 
+python3 setup.py install 
 <span style="color:#080;font-style:italic"># If having problem here, go see key point 3 below </span>
 <span style="color:#080;font-style:italic"># This will take a while</span>
 <span style="color:#a2f">cd</span> ../
 
 </code></pre></div><p>Install OpenCV:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic">#Link native OpenCV to the virtual enviroment</span>
-sudo find / -name cv2 <span style="color:#080;font-style:italic">#find where the native OpenCV is</span>
+<span style="color:#080;font-style:italic">#find where the native OpenCV is</span>
+find / -name cv2 
 <span style="color:#080;font-style:italic"># It should be in /usr/lib/python3.6/dist-packages/cv2/python-3.6/</span>
 <span style="color:#080;font-style:italic"># You should find the .so file called &#39;cv2.cpython-36m-aarch64-linux-gnu.so&#39;</span>
 ln -s /usr/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ~/.virtualenvs/<span style="color:#666">{</span>your env<span style="color:#666">}</span>/cv2.cpython-36m-aarch64-linux-gnu.so
