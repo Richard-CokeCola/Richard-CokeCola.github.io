@@ -69,7 +69,7 @@ if (!doNotTrack) {
         </span>
         <span>
           
-            586 words
+            604 words
           
         </span>
         <span class="split">
@@ -195,8 +195,16 @@ ln -s /usr/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-li
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">python detect<span style="color:#666">.</span>py <span style="color:#666">--</span>source inference<span style="color:#666">/</span>images<span style="color:#666">/</span> <span style="color:#666">--</span>weights weights<span style="color:#666">/</span>yolov5s<span style="color:#666">.</span>pt
 </code></pre></div><p><strong>Congratulations!</strong></p>
 <h2 id="key-points">Key points: <a href="#key-points" class="anchor"></a></h2><ol>
-<li>If you have internet issues leads to download failed, try again may help.</li>
-<li>Use YOLOV5 v3.1</li>
+<li>
+<p>If you have internet issues leads to download failed, try again may help.</p>
+</li>
+<li>
+<p>Use YOLOV5 v3.1</p>
+</li>
+<li>
+<p>If you use Jetson Navier NX, this link might help to solve illegal instruction (core dumped) problem:</p>
+<p><a href="https://forums.developer.nvidia.com/t/illegal-instruction-core-dumped-xavier/166278">https://forums.developer.nvidia.com/t/illegal-instruction-core-dumped-xavier/166278</a></p>
+</li>
 </ol>
 <h2 id="these-are-the-outputs-i-got">These are the outputs I got: <a href="#these-are-the-outputs-i-got" class="anchor"></a></h2><p>Run it on testing images in the project file:
 <p class="markdown-image">
@@ -214,11 +222,11 @@ Run it on a <a
     Youtube video:
 </a>
 <p class="markdown-image">
-  <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/jetson-output-car.jpg" alt="&amp;lsquo;Jetson output car&amp;rsquo;"  title="YOLOv5 running on Jetson nano" />
+  <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/jetson-output-car.jpg" alt="&amp;lsquo;Jetson output-car&amp;rsquo;"  title="YOLOv5 running on Jetson nano" />
 </p>
 Run it on a pre-recorded office video:
 <p class="markdown-image">
-  <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/jetson-output.jpg" alt="&amp;lsquo;Jetson output office&amp;rsquo;"  title="YOLOv5 running on Jetson nano" />
+  <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/jetson-output.jpg" alt="&amp;lsquo;Jetson output-office&amp;rsquo;"  title="YOLOv5 running on Jetson nano" />
 </p></p>
 <h2 id="reference"><em>Reference:</em> <a href="#reference" class="anchor"></a></h2><ol>
 <li><a href="https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn">https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn</a></li>
