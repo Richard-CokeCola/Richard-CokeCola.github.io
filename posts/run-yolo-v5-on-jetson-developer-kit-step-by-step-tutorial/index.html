@@ -69,7 +69,7 @@ if (!doNotTrack) {
         </span>
         <span>
           
-            604 words
+            615 words
           
         </span>
         <span class="split">
@@ -177,7 +177,7 @@ pip3 install torch-1.6.0-cp36-cp36m-linux_aarch64.whl
 git clone --branch v0.7.0 https://github.com/pytorch/vision torchvision
 <span style="color:#a2f">cd</span> torchvision
 <span style="color:#a2f">export</span> <span style="color:#b8860b">BUILD_VERSION</span><span style="color:#666">=</span>0.7.0 
-sudo python setup.py install
+sudo python setup.py install <span style="color:#080;font-style:italic"># If having problem here, go see key point 3 below </span>
 
 <span style="color:#080;font-style:italic">#Link native OpenCV to the virtual enviroment</span>
 sudo find / -name cv2 <span style="color:#080;font-style:italic">#find where the native OpenCV is</span>
@@ -202,7 +202,7 @@ ln -s /usr/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-li
 <p>Use YOLOV5 v3.1</p>
 </li>
 <li>
-<p>If you use Jetson Navier NX, this link might help to solve illegal instruction (core dumped) problem:</p>
+<p>If you use Jetson Navier NX, this link might help to solve &ldquo;illegal instruction (core dumped)&rdquo; problem:</p>
 <p><a href="https://forums.developer.nvidia.com/t/illegal-instruction-core-dumped-xavier/166278">https://forums.developer.nvidia.com/t/illegal-instruction-core-dumped-xavier/166278</a></p>
 </li>
 </ol>
