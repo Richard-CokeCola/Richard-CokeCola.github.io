@@ -6,11 +6,13 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="  Install Anaconda or Miniconda depends on your taste.
+<meta name="description" content="Install Anaconda or Miniconda depends on your taste.
 Go to anaconda or miniconda&rsquo;s website and download the .sh file for your system. Go into the terminal use &ldquo;chmod &#43;x filename&rdquo; command to the .sh file then run it. Always click yes to finish installation.
   Install jupyter
-  x
-  ">
+conda install -y jupyter
+  Create the enviroment named torch
+conda create &ndash;name torch python=3.8
+After finished, reopen the terminal">
 <meta name="generator" content="Hugo 0.83.1" />
 
 
@@ -72,7 +74,7 @@ if (!doNotTrack) {
         </span>
         <span>
           
-            47 words
+            131 words
           
         </span>
         <span class="split">
@@ -91,11 +93,56 @@ if (!doNotTrack) {
 </li>
 <li>
 <p><strong>Install jupyter</strong></p>
+<p>conda install -y jupyter</p>
 </li>
 <li>
-<p>x</p>
+<p><strong>Create the enviroment named torch</strong></p>
+<p>conda create &ndash;name torch python=3.8</p>
+<p>After finished, reopen the terminal</p>
 </li>
+<li>
+<p><strong>Activate enviroment</strong></p>
+<p>conda activate torch</p>
+<p>conda install nb_conda</p>
+</li>
+<li>
+<p><strong>Install Pytorch</strong></p>
+<ul>
+<li>
+<p>CPU and GPU:</p>
+<p>conda install pytorch cudatoolkit -c pytorch</p>
+</li>
+<li>
+<p>CPU only:</p>
+<p>conda install pytorch -c pytorch</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Install other libraries</strong></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">dependencies:
+    - jupyter
+    - scikit-learn
+    - scipy
+    - pandas
+    - pandas-datareader
+    - matplotlibco
+    - pillow
+    - tqdm
+    - requests
+    - h5py
+    - pyyaml
+    - flask
+    - boto3
+    - pip:
+        - bayesian-optimization
+        - gym
+        - kaggle
+</code></pre></div></li>
+<li></li>
 </ol>
+<p><strong>Reference:</strong></p>
+<p><a href="https://github.com/jeffheaton/t81_558_deep_learning/blob/master/install/pytorch-install-jul-2020.ipynb">https://github.com/jeffheaton/t81_558_deep_learning/blob/master/install/pytorch-install-jul-2020.ipynb</a></p>
 
     </div>
 
