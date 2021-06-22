@@ -11,8 +11,7 @@ Go to anaconda or miniconda&rsquo;s website and download the .sh file for your s
   Install jupyter
 conda install -y jupyter
   Create the enviroment named torch
-conda create &ndash;name torch python=3.8
-After finished, reopen the terminal">
+conda create --name torch python=3.8 # created a conda enviroment named &#39;torch&#39; After finished, reopen the terminal">
 <meta name="generator" content="Hugo 0.83.1" />
 
 
@@ -74,7 +73,7 @@ if (!doNotTrack) {
         </span>
         <span>
           
-            131 words
+            155 words
           
         </span>
         <span class="split">
@@ -97,8 +96,9 @@ if (!doNotTrack) {
 </li>
 <li>
 <p><strong>Create the enviroment named torch</strong></p>
-<p>conda create &ndash;name torch python=3.8</p>
-<p>After finished, reopen the terminal</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda create --name torch <span style="color:#b8860b">python</span><span style="color:#666">=</span>3.8
+<span style="color:#080;font-style:italic"># created a conda enviroment named &#39;torch&#39;</span>
+</code></pre></div><p>After finished, reopen the terminal</p>
 </li>
 <li>
 <p><strong>Activate enviroment</strong></p>
@@ -110,12 +110,12 @@ if (!doNotTrack) {
 <ul>
 <li>
 <p>CPU and GPU:</p>
-<p>conda install pytorch cudatoolkit -c pytorch</p>
-</li>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda install pytorch torchvision torchaudio <span style="color:#b8860b">cudatoolkit</span><span style="color:#666">=</span>11.1 -c pytorch -c nvidia
+</code></pre></div></li>
 <li>
 <p>CPU only:</p>
-<p>conda install pytorch -c pytorch</p>
-</li>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda install pytorch -c pytorch
+</code></pre></div></li>
 </ul>
 </li>
 <li>
@@ -138,11 +138,13 @@ if (!doNotTrack) {
         - bayesian-optimization
         - gym
         - kaggle
+</code></pre></div><p>Or, if there is any requirements.txt, just use</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install -r requirements.txt
 </code></pre></div></li>
-<li></li>
 </ol>
 <p><strong>Reference:</strong></p>
 <p><a href="https://github.com/jeffheaton/t81_558_deep_learning/blob/master/install/pytorch-install-jul-2020.ipynb">https://github.com/jeffheaton/t81_558_deep_learning/blob/master/install/pytorch-install-jul-2020.ipynb</a></p>
+<p><a href="https://pytorch.org/get-started/locally/">https://pytorch.org/get-started/locally/</a></p>
 
     </div>
 

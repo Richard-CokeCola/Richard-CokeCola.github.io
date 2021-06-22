@@ -18,8 +18,7 @@ Go to anaconda or miniconda&amp;rsquo;s website and download the .sh file for yo
   Install jupyter
 conda install -y jupyter
   Create the enviroment named torch
-conda create &amp;ndash;name torch python=3.8
-After finished, reopen the terminal</description>
+conda create --name torch python=3.8 # created a conda enviroment named &amp;#39;torch&amp;#39; After finished, reopen the terminal</description>
     </item>
     
     <item>
