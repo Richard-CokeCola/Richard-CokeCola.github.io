@@ -69,7 +69,7 @@ if (!doNotTrack) {
         </span>
         <span>
           
-            675 words
+            674 words
           
         </span>
         <span class="split">
@@ -106,21 +106,15 @@ if (!doNotTrack) {
 >
     Nvidia official set up tutorial
 </a> for more information.</p>
-<h3 id="setting-up-the-enviroment">Setting up the enviroment: <a href="#setting-up-the-enviroment" class="anchor"></a></h3><ul>
-<li><strong>Install virtualenv and virtualenvwrapper using:</strong></li>
-</ul>
+<h2 id="setting-up-the-enviroment">Setting up the enviroment: <a href="#setting-up-the-enviroment" class="anchor"></a></h2><p><strong>Install virtualenv and virtualenvwrapper:</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># install pip first since there is no pip pre-installed</span>
 apt-get install python3-pip
 sudo apt-get install python3-setuptools
 python3 -m pip install --upgrade pip setuptools wheel
 sudo pip3 install virtualenv virtualenvwrapper
-</code></pre></div><ul>
-<li><strong>You can also enter administrator mode to avoid typing sudo all the time by using:</strong></li>
-</ul>
+</code></pre></div><p><strong>You can also enter administrator mode to avoid typing sudo all the time by using:</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo -i
-</code></pre></div><ul>
-<li><strong>Modify the enviroment variable:</strong></li>
-</ul>
+</code></pre></div><p><strong>Modify the enviroment variable:</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># Install an editor first</span>
 <span style="color:#080;font-style:italic">#you can also choose other editor</span>
 sudo apt-get -y install nano 
@@ -131,19 +125,13 @@ nano ~/.bashrc
 <span style="color:#a2f">export</span> <span style="color:#b8860b">VIRTUALENVWRAPPER_PYTHON</span><span style="color:#666">=</span>/usr/bin/python3
 <span style="color:#a2f">source</span> /usr/local/bin/virtualenvwrapper.sh
 <span style="color:#080;font-style:italic"># After this, reopen the terminal</span>
-</code></pre></div><ul>
-<li><strong>Set virtual developing enviroment:</strong></li>
-</ul>
+</code></pre></div><p><strong>Set virtual developing enviroment:</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkvirtualenv yolov5 
 <span style="color:#080;font-style:italic"># A virtual developing enviroment named &#34;yolov5&#34; has been created</span>
-</code></pre></div><ul>
-<li><strong>Start working on the virtual developing enviroment you just created:</strong></li>
-</ul>
+</code></pre></div><p><strong>Start working on the virtual developing enviroment you just created:</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">workon yolov5
 <span style="color:#080;font-style:italic"># If &#34;(yolov5)&#34; appeared in front of your username, this means it worked</span>
-</code></pre></div><ul>
-<li><strong>Download YOLOv5:</strong></li>
-</ul>
+</code></pre></div><p><strong>Download YOLOv5:</strong></p>
 <p>There is one tricky part to run YOLOv5 on Jetson developer kit which is you <strong>MUST USE YOLOV5 V3.1</strong> otherwise it won&rsquo;t work based on my experiments. However, I also found people posted that YOLOv5 master branch worked well on Jetson as well. If you want to try the YOLOv5 master branch:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># install git</span>
 apt-get install git-all -y 
@@ -161,9 +149,7 @@ git clone https://github.com/ultralytics/yolov5.git
 >
     YOLOv5 v3.1 offocial website
 </a> and then copy to your vitual enviroment folder named yolov5.</p>
-<ul>
-<li><strong>Install all the softwares:</strong></li>
-</ul>
+<p><strong>Install all the softwares:</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># check Jetpack version</span>
 apt-cache show nvidia-jetpack
 <span style="color:#080;font-style:italic"># Install pytorch method 1</span>
