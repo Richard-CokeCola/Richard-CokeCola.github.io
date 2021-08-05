@@ -6,13 +6,27 @@
     <description>Recent content in  tutorial  on Richard&#39;s Lullaby</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jun 2021 10:21:38 +0800</lastBuildDate><atom:link href="https://richard-cokecola.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Aug 2021 11:13:29 +0800</lastBuildDate><atom:link href="https://richard-cokecola.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Install Pytorch on Ubuntu</title>
-      <link>https://richard-cokecola.github.io/posts/install-pytorch-on-ubuntu/</link>
+      <title>Install Pytorch for GPU and CPU using Conda on Windows</title>
+      <link>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-windows/</link>
+      <pubDate>Thu, 05 Aug 2021 11:13:29 +0800</pubDate>
+      
+      <guid>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-windows/</guid>
+      <description>Install Anaconda or Miniconda depends on your taste.
+Go to anaconda or miniconda&amp;rsquo;s website and download the .sh file for your system. Go into the terminal use &amp;ldquo;chmod +x filename&amp;rdquo; command to the .sh file then run it. Always click yes to finish installation.
+  Install jupyter
+conda install -y jupyter
+  Create the enviroment named torch
+conda create --name torch python=3.8 # created a conda enviroment named &amp;#39;torch&amp;#39; After finished, reopen the terminal</description>
+    </item>
+    
+    <item>
+      <title>Install Pytorch for GPU and CPU using Conda on Ubuntu</title>
+      <link>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-ubuntu/</link>
       <pubDate>Thu, 17 Jun 2021 10:21:38 +0800</pubDate>
       
-      <guid>https://richard-cokecola.github.io/posts/install-pytorch-on-ubuntu/</guid>
+      <guid>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-ubuntu/</guid>
       <description>Install Anaconda or Miniconda depends on your taste.
 Go to anaconda or miniconda&amp;rsquo;s website and download the .sh file for your system. Go into the terminal use &amp;ldquo;chmod +x filename&amp;rdquo; command to the .sh file then run it. Always click yes to finish installation.
   Install jupyter
