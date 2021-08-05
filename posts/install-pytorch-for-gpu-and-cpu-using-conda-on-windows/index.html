@@ -73,7 +73,7 @@ if (!doNotTrack) {
         </span>
         <span>
           
-            151 words
+            167 words
           
         </span>
         <span class="split">
@@ -107,10 +107,21 @@ if (!doNotTrack) {
 </li>
 <li>
 <p><strong>Install Pytorch</strong></p>
+<p>You can go check <a 
+    href="https://pytorch.org/get-started/locally/"
+    
+    
+     
+      target="_blank" 
+      rel="noopener"
+    
+>
+    Pytorch&rsquo;s website
+</a> to see all the installation options.</p>
 <ul>
 <li>
 <p>CPU and GPU:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda install pytorch <span style="color:#b8860b">cudatoolkit</span><span style="color:#666">=</span><span style="color:#666">11</span> -c pytorch
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda install pytorch torchvision torchaudio <span style="color:#b8860b">cudatoolkit</span><span style="color:#666">=</span>11.1 -c pytorch -c conda-forge
 </code></pre></div></li>
 <li>
 <p>CPU only:</p>
