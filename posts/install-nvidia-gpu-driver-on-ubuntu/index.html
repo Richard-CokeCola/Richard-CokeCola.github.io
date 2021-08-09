@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Richard&#39;s Lullaby</title>
+    <title>Install Nvidia GPU driver on Ubuntu | Richard&#39;s Lullaby</title>
 
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="Richard&#39;s Lullaby">
+<meta name="description" content="Install Nvidia driver on Ubuntu is very tricky. Sometimes it goes extremely smooth while sometime it just doesn&rsquo;t work. Follow these following steps, it should make it easier.
+  Download Nvidia driver to your Ubuntu machine from its website. It is a .run file.
+  Install make and gcc.
+sudo apt install make sudo apt install gcc   Disable Nouveau kernel driver.
+# Create a file sudo nano /etc/modprobe.">
 <meta name="generator" content="Hugo 0.83.1" />
 
 
@@ -56,92 +60,78 @@ if (!doNotTrack) {
     <main class="main">
       
 
-<div id="page-404">
-  <div class="text">
-      
-          <h1>404 - You are at the middle of nowhere</h1>
-      
+<section id="single">
+    <h1 class="title">Install Nvidia GPU driver on Ubuntu</h1>
 
-      
-          <div>You are at the middle of nowhere</div>
-      
+    <div class="tip">
+        <span>
+          Aug 9, 2021 08:46
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          
+            123 words
+          
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          1 minute read
+        </span>
     </div>
-  </div>
 
-  
-      <h2 class="read-more">Read More</h2> 
-  
+    <div class="content">
+      <p>Install Nvidia driver on Ubuntu is very tricky. Sometimes it goes extremely smooth while sometime it just doesn&rsquo;t work. Follow these following steps, it should make it easier.</p>
+<ol>
+<li>
+<p>Download Nvidia driver to your Ubuntu machine from its website. It is a .run file.</p>
+</li>
+<li>
+<p>Install make and gcc.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install make    
+sudo apt install gcc
+</code></pre></div></li>
+<li>
+<p>Disable Nouveau kernel driver.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># Create a file</span>
+sudo nano /etc/modprobe.d/blacklist-nouveau.conf
+</code></pre></div><p>with the following contents:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">blacklist nouveau
+options nouveau modeset=0
+</code></pre></div><p>Regenerate the kernel initramfs:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo update-initramfs -u
+</code></pre></div><p>Then reboot</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo reboot
+</code></pre></div></li>
+<li>
+<p>Hit Ctrl+Alt+F1 and login using your credentials. Then kill your current X server session by typing sudo service lightdm stop or sudo lightdm stop. Enter runlevel 3 by typing:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo init <span style="color:#666">3</span>
+</code></pre></div></li>
+<li>
+<p>Install the driver</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo ./Your_Nvidia_Driver.run
+</code></pre></div></li>
+</ol>
 
-  
+    </div>
 
+    
+        <div class="tags">
+            
+                <a href="https://richard-cokecola.github.io/tags/ai"> AI </a>
+            
+                <a href="https://richard-cokecola.github.io/tags/tutorial">Tutorial</a>
+            
+        </div>
+    
+    
+    
 
-    
-    
-    
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/install-nvidia-gpu-driver-on-ubuntu/'>Install Nvidia GPU driver on Ubuntu</a></h1>   
-            <div class="date">Aug 9, 2021</div>
-          </div>
-        </section>
-    
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-windows/'>Install Pytorch for GPU and CPU using Conda on Windows</a></h1>   
-            <div class="date">Aug 5, 2021</div>
-          </div>
-        </section>
-    
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/blogs-that-worth-reading/'>Blogs that worth reading</a></h1>   
-            <div class="date">Jun 29, 2021</div>
-          </div>
-        </section>
-    
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-ubuntu/'>Install Pytorch for GPU and CPU using Conda on Ubuntu</a></h1>   
-            <div class="date">Jun 17, 2021</div>
-          </div>
-        </section>
-    
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/run-yolo-v5-on-jetson-developer-kit-step-by-step-tutorial/'>Run YOLO v5 on Jetson developer kit step by step tutorial</a></h1>   
-            <div class="date">Jun 4, 2021</div>
-          </div>
-        </section>
-    
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/richards-fried-chicken-recipe/'>Richard&#39;s fried chicken recipe</a></h1>   
-            <div class="date">Jun 3, 2021</div>
-          </div>
-        </section>
-    
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/why-i-want-to-write-my-blog/'>Why I want to write my blog?</a></h1>   
-            <div class="date">Jun 3, 2021</div>
-          </div>
-        </section>
-    
-</div>
+</section>
+
 
     </main>
     

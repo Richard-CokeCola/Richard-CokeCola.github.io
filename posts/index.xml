@@ -6,7 +6,20 @@
     <description>Recent content in Posts on Richard&#39;s Lullaby</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Aug 2021 11:13:29 +0800</lastBuildDate><atom:link href="https://richard-cokecola.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Aug 2021 08:46:38 +0800</lastBuildDate><atom:link href="https://richard-cokecola.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Nvidia GPU driver on Ubuntu</title>
+      <link>https://richard-cokecola.github.io/posts/install-nvidia-gpu-driver-on-ubuntu/</link>
+      <pubDate>Mon, 09 Aug 2021 08:46:38 +0800</pubDate>
+      
+      <guid>https://richard-cokecola.github.io/posts/install-nvidia-gpu-driver-on-ubuntu/</guid>
+      <description>Install Nvidia driver on Ubuntu is very tricky. Sometimes it goes extremely smooth while sometime it just doesn&amp;rsquo;t work. Follow these following steps, it should make it easier.
+  Download Nvidia driver to your Ubuntu machine from its website. It is a .run file.
+  Install make and gcc.
+sudo apt install make sudo apt install gcc   Disable Nouveau kernel driver.
+# Create a file sudo nano /etc/modprobe.</description>
+    </item>
+    
     <item>
       <title>Install Pytorch for GPU and CPU using Conda on Windows</title>
       <link>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-windows/</link>
