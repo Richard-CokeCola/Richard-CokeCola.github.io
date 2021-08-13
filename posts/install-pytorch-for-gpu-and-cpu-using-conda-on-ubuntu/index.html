@@ -73,7 +73,7 @@ if (!doNotTrack) {
         </span>
         <span>
           
-            167 words
+            184 words
           
         </span>
         <span class="split">
@@ -104,6 +104,8 @@ if (!doNotTrack) {
 <p><strong>Activate enviroment</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda activate torch
 conda install nb_conda
+<span style="color:#080;font-style:italic"># Add conda env to jupyter notebook</span>
+python -m ipykernel install --user --name myenv --display-name <span style="color:#b44">&#34;Python (myenv)&#34;</span>
 </code></pre></div></li>
 <li>
 <p><strong>Install Pytorch</strong></p>
