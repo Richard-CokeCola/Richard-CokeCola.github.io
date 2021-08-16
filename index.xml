@@ -37,11 +37,12 @@ sudo apt install make sudo apt install gcc   Disable Nouveau kernel driver.
       
       <guid>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-windows/</guid>
       <description>Install Anaconda or Miniconda depends on your taste.
-Go to anaconda or miniconda&amp;rsquo;s website and download the .sh file for your system. Go into the terminal use &amp;ldquo;chmod +x filename&amp;rdquo; command to the .sh file then run it. Always click yes to finish installation.
+Go to anaconda or miniconda&amp;rsquo;s website and download the .exe installer for your system. Rember to check the set conda as enviroment viable box.
   Install jupyter
 conda install -y jupyter
   Create the enviroment named torch
-conda create --name torch python=3.8 # created a conda enviroment named &amp;#39;torch&amp;#39; After finished, reopen the terminal</description>
+conda create --name torch python=3.8 # created a conda enviroment named &amp;#39;torch&amp;#39; After finished, reopen the terminal
+  Activate enviroment</description>
     </item>
     
     <item>
