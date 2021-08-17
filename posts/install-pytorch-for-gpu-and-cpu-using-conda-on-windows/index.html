@@ -74,7 +74,7 @@ if (!doNotTrack) {
         </span>
         <span>
           
-            155 words
+            168 words
           
         </span>
         <span class="split">
@@ -126,13 +126,15 @@ if (!doNotTrack) {
 </code></pre></div></li>
 <li>
 <p>CPU only:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda install pytorch -c pytorch
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda create --name torch <span style="color:#b8860b">python</span><span style="color:#666">=</span>3.7
+conda install pytorch torchvision torchaudio cpuonly -c pytorch
 </code></pre></div></li>
 </ul>
 </li>
 <li>
 <p><strong>Install other libraries</strong></p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">dependencies:
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">conda install -c conda-forge opencv
+dependencies:
     - jupyter
     - scikit-learn
     - scipy
