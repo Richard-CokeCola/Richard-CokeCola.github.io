@@ -6,7 +6,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="What&rsquo;s the goal? 🔗To run YOLOv5 on jetson developer kit to achieve real-time object detection. The following instructions has been tested on: 🔗 Jetson nano Jetson Xavier NX What you need: 🔗 A Jetson nano (If you are using other Jetson developer kit from Nvidia, I am sure you can take this as reference as well.) A SD card and power suply which meets the needs. Another computer">
+<meta name="description" content="What&rsquo;s the goal? To run YOLOv5 on jetson developer kit to achieve real-time object detection. The following instructions has been tested on: Jetson nano Jetson Xavier NX What you need: A Jetson nano (If you are using other Jetson developer kit from Nvidia, I am sure you can take this as reference as well.) A SD card and power suply which meets the needs. Another computer or laptop with internet">
 <meta name="generator" content="Hugo 0.83.1" />
 
 
@@ -76,7 +76,7 @@ if (!doNotTrack) {
         </span>
         <span>
           
-            798 words
+            782 words
           
         </span>
         <span class="split">
@@ -112,12 +112,12 @@ if (!doNotTrack) {
 
 
     <div class="content">
-      <h2 id="whats-the-goal">What&rsquo;s the goal? <a href="#whats-the-goal" class="anchor">🔗</a></h2><p>To run YOLOv5 on jetson developer kit to achieve real-time object detection.</p>
-<h2 id="the-following-instructions-has-been-tested-on">The following instructions has been tested on: <a href="#the-following-instructions-has-been-tested-on" class="anchor">🔗</a></h2><ul>
+      <h2 id="whats-the-goal">What&rsquo;s the goal? <a href="#whats-the-goal" class="anchor"></a></h2><p>To run YOLOv5 on jetson developer kit to achieve real-time object detection.</p>
+<h2 id="the-following-instructions-has-been-tested-on">The following instructions has been tested on: <a href="#the-following-instructions-has-been-tested-on" class="anchor"></a></h2><ul>
 <li>Jetson nano</li>
 <li>Jetson Xavier NX</li>
 </ul>
-<h2 id="what-you-need">What you need: <a href="#what-you-need" class="anchor">🔗</a></h2><ul>
+<h2 id="what-you-need">What you need: <a href="#what-you-need" class="anchor"></a></h2><ul>
 <li>A Jetson nano (If you are using other Jetson developer kit from Nvidia, I am sure you can take this as reference as well.)</li>
 <li>A SD card and power suply which meets the needs.</li>
 <li>Another computer or laptop with internet connection and built-in SD card slot or an adapter.</li>
@@ -125,7 +125,7 @@ if (!doNotTrack) {
 </ul>
 <p><strong>Firsty, to start the system on Jetson developer kit, write image to microSD card.</strong></p>
 <p>Download the official image file and write it in the microSD card. You can go check <a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit" title="Nvidia tutorial"  target="_blank" rel="noopener">Nvidia official set up tutorial</a> for more information.</p>
-<h2 id="setting-up-the-enviroment">Setting up the enviroment: <a href="#setting-up-the-enviroment" class="anchor">🔗</a></h2><p><strong>Install virtualenv and virtualenvwrapper:</strong></p>
+<h2 id="setting-up-the-enviroment">Setting up the enviroment: <a href="#setting-up-the-enviroment" class="anchor"></a></h2><p><strong>Install virtualenv and virtualenvwrapper:</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># install pip first since there is no pip pre-installed</span>
 apt-get install python3-pip
 sudo apt-get install python3-setuptools
@@ -209,7 +209,7 @@ Install the rest:</p>
 </code></pre></div><p>Now, you are ready to run YOLOv5! Let&rsquo;s try running YOLOv5 on defauly images:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">python detect<span style="color:#666">.</span>py <span style="color:#666">--</span>source inference<span style="color:#666">/</span>images<span style="color:#666">/</span> <span style="color:#666">--</span>weights weights<span style="color:#666">/</span>yolov5s<span style="color:#666">.</span>pt
 </code></pre></div><p><strong>Congratulations!</strong></p>
-<h2 id="key-points">Key points: <a href="#key-points" class="anchor">🔗</a></h2><ol>
+<h2 id="key-points">Key points: <a href="#key-points" class="anchor"></a></h2><ol>
 <li>
 <p>If you have internet issues leads to download failed, try again may help.</p>
 </li>
@@ -223,7 +223,7 @@ Install the rest:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install <span style="color:#b8860b">numpy</span><span style="color:#666">==</span>1.19.4
 </code></pre></div></li>
 </ol>
-<h2 id="these-are-the-outputs-i-got">These are the outputs I got: <a href="#these-are-the-outputs-i-got" class="anchor">🔗</a></h2><p>Run it on testing images in the project file:
+<h2 id="these-are-the-outputs-i-got">These are the outputs I got: <a href="#these-are-the-outputs-i-got" class="anchor"></a></h2><p>Run it on testing images in the project file:
 <p class="markdown-image">
   <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/IMG_9604.JPG" alt="&amp;lsquo;Jetson output&amp;rsquo;"  title="YOLOv5 running on Jetson nano" />
 </p>
@@ -235,7 +235,7 @@ Run it on a pre-recorded office video:
 <p class="markdown-image">
   <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/jetson-output.jpg" alt="&amp;lsquo;Jetson output-office&amp;rsquo;"  title="YOLOv5 running on Jetson nano" />
 </p></p>
-<h2 id="references"><em>References:</em> <a href="#references" class="anchor">🔗</a></h2><ol>
+<h2 id="references"><em>References:</em> <a href="#references" class="anchor"></a></h2><ol>
 <li><em>Pytorch深度学习框架X NVIDIA JetsonNano应用-YOLOv5辨识台湾实时路况</em> <a href="https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn">https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn</a></li>
 <li><em>How to Run YoloV5 Real-Time Object Detection on Pytorch with Docker on NVIDIA Jetson Modules</em> <a href="https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules">https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules</a></li>
 <li><a href="https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-nano/76">https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-nano/76</a></li>
