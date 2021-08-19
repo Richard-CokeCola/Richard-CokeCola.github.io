@@ -2,28 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://richard-cokecola.github.io/tags/direction-sign/</loc>
-    <lastmod>2021-08-10T13:22:09+08:00</lastmod>
-  </url><url>
-    <loc>https://richard-cokecola.github.io/tags/music/</loc>
-    <lastmod>2021-08-10T13:22:09+08:00</lastmod>
-  </url><url>
-    <loc>https://richard-cokecola.github.io/posts/introducing-my-favourite-band-re-tros/</loc>
-    <lastmod>2021-08-10T13:22:09+08:00</lastmod>
-  </url><url>
-    <loc>https://richard-cokecola.github.io/posts/</loc>
-    <lastmod>2021-08-10T13:22:09+08:00</lastmod>
-  </url><url>
-    <loc>https://richard-cokecola.github.io/</loc>
-    <lastmod>2021-08-10T13:22:09+08:00</lastmod>
-  </url><url>
-    <loc>https://richard-cokecola.github.io/tags/</loc>
-    <lastmod>2021-08-10T13:22:09+08:00</lastmod>
-  </url><url>
     <loc>https://richard-cokecola.github.io/tags/ai/</loc>
     <lastmod>2021-08-09T08:46:38+08:00</lastmod>
   </url><url>
     <loc>https://richard-cokecola.github.io/posts/install-nvidia-gpu-driver-on-ubuntu/</loc>
+    <lastmod>2021-08-09T08:46:38+08:00</lastmod>
+  </url><url>
+    <loc>https://richard-cokecola.github.io/posts/</loc>
+    <lastmod>2021-08-09T08:46:38+08:00</lastmod>
+  </url><url>
+    <loc>https://richard-cokecola.github.io/</loc>
+    <lastmod>2021-08-09T08:46:38+08:00</lastmod>
+  </url><url>
+    <loc>https://richard-cokecola.github.io/tags/</loc>
     <lastmod>2021-08-09T08:46:38+08:00</lastmod>
   </url><url>
     <loc>https://richard-cokecola.github.io/tags/tutorial/</loc>
@@ -31,6 +22,9 @@
   </url><url>
     <loc>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-windows/</loc>
     <lastmod>2021-08-05T11:13:29+08:00</lastmod>
+  </url><url>
+    <loc>https://richard-cokecola.github.io/tags/direction-sign/</loc>
+    <lastmod>2021-06-29T15:21:27+08:00</lastmod>
   </url><url>
     <loc>https://richard-cokecola.github.io/posts/blogs-that-worth-reading/</loc>
     <lastmod>2021-06-29T15:21:27+08:00</lastmod>
