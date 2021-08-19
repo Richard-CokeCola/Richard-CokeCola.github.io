@@ -13,7 +13,7 @@
       <pubDate>Tue, 10 Aug 2021 13:22:09 +0800</pubDate>
       
       <guid>https://richard-cokecola.github.io/posts/introducing-my-favourite-band-re-tros/</guid>
-      <description>Content 1	Introduction
+      <description>Content 🔗1	Introduction
 ​	1.1	Band Name
 2	Musical Works
 ​	2.1	Early Stage
@@ -23,7 +23,7 @@
 3	Discussion
 ​	3.1	My music taste before I start listening Re-tros
 4	Conclusion
-   First Header Second Header     Content Cell Content Cell   Content Cell Content Cell    1	Introduction Re-tros, or their full name, Rebuilding the Rights of Statues, is a band from Beijing, China, with three members, Hua Dong, Liu Ming, and Huang Jin.</description>
+   First Header Second Header     Content Cell Content Cell   Content Cell Content Cell    1	Introduction 🔗Re-tros, or their full name, Rebuilding the Rights of Statues, is a band from Beijing, China, with three members, Hua Dong, Liu Ming, and Huang Jin.</description>
     </item>
     
     <item>
@@ -90,7 +90,7 @@ conda create --name torch python=3.8 # created a conda enviroment named &amp;#39
       <pubDate>Fri, 04 Jun 2021 09:01:47 +0800</pubDate>
       
       <guid>https://richard-cokecola.github.io/posts/run-yolo-v5-on-jetson-developer-kit-step-by-step-tutorial/</guid>
-      <description>What&amp;rsquo;s the goal? To run YOLOv5 on jetson developer kit to achieve real-time object detection. The following instructions has been tested on: Jetson nano Jetson Xavier NX What you need: A Jetson nano (If you are using other Jetson developer kit from Nvidia, I am sure you can take this as reference as well.) A SD card and power suply which meets the needs. Another computer or laptop with internet</description>
+      <description>What&amp;rsquo;s the goal? 🔗To run YOLOv5 on jetson developer kit to achieve real-time object detection. The following instructions has been tested on: 🔗 Jetson nano Jetson Xavier NX What you need: 🔗 A Jetson nano (If you are using other Jetson developer kit from Nvidia, I am sure you can take this as reference as well.) A SD card and power suply which meets the needs. Another computer</description>
     </item>
     
     <item>
@@ -99,7 +99,7 @@ conda create --name torch python=3.8 # created a conda enviroment named &amp;#39
       <pubDate>Thu, 03 Jun 2021 15:46:13 +0800</pubDate>
       
       <guid>https://richard-cokecola.github.io/posts/richards-fried-chicken-recipe/</guid>
-      <description>Why fried chicken Come on, man. What is the definition of good fried chicken Looking good (golden shell outside) Juicy inside Chicken meet has strong mixed and balanced taste even deep inside Raw materials Chicken leg, thigh, breast, or whatever you like. Oil (A LOT) Seasoning: Sea salt (if you do not have sea salt then normal salt) Chinese 13 Spices Mix (王守義十三香)</description>
+      <description>Why fried chicken 🔗Come on, man. What is the definition of good fried chicken 🔗 Looking good (golden shell outside) Juicy inside Chicken meet has strong mixed and balanced taste even deep inside Raw materials 🔗 Chicken leg, thigh, breast, or whatever you like. Oil (A LOT) Seasoning: Sea salt (if you do not have sea salt then normal salt) Chinese 13 Spices Mix (王</description>
     </item>
     
     <item>
