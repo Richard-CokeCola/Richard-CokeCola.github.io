@@ -11,8 +11,7 @@ Go to anaconda or miniconda&rsquo;s website and download the .exe installer for 
   Install jupyter
 conda install -y jupyter
   Create the enviroment named torch
-conda create --name torch python=3.8 # created a conda enviroment named &#39;torch&#39; After finished, reopen the terminal
-  Activate enviroment">
+conda create --name torch python=3.8 # created a conda enviroment named &#39;torch&#39; # If you use cpu only, you need to change it to python 3.">
 <meta name="generator" content="Hugo 0.83.1" />
 
 
@@ -79,7 +78,7 @@ conda create --name torch python=3.8 # created a conda enviroment named &#39;tor
         </span>
         <span>
           
-            168 words
+            182 words
           
         </span>
         <span class="split">
@@ -118,6 +117,8 @@ conda create --name torch python=3.8 # created a conda enviroment named &#39;tor
 <p><strong>Create the enviroment named torch</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda create --name torch <span style="color:#b8860b">python</span><span style="color:#666">=</span>3.8
 <span style="color:#080;font-style:italic"># created a conda enviroment named &#39;torch&#39;</span>
+<span style="color:#080;font-style:italic"># If you use cpu only, you need to change it to python 3.7</span>
+conda create --name torch <span style="color:#b8860b">python</span><span style="color:#666">=</span>3.7
 </code></pre></div><p>After finished, reopen the terminal</p>
 </li>
 <li>
@@ -135,8 +136,7 @@ conda create --name torch python=3.8 # created a conda enviroment named &#39;tor
 </code></pre></div></li>
 <li>
 <p>CPU only:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda create --name torch <span style="color:#b8860b">python</span><span style="color:#666">=</span>3.7
-conda install pytorch torchvision torchaudio cpuonly -c pytorch
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda install pytorch torchvision torchaudio cpuonly -c pytorch
 </code></pre></div></li>
 </ul>
 </li>
