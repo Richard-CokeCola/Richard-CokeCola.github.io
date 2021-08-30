@@ -78,7 +78,7 @@ conda create --name torch python=3.8 # created a conda enviroment named &#39;tor
         </span>
         <span>
           
-            182 words
+            199 words
           
         </span>
         <span class="split">
@@ -123,9 +123,11 @@ conda create --name torch <span style="color:#b8860b">python</span><span style="
 </li>
 <li>
 <p><strong>Activate enviroment</strong></p>
-<p>conda activate torch</p>
-<p>conda install nb_conda</p>
-</li>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda activate torch
+conda install nb_conda
+<span style="color:#080;font-style:italic"># Add conda env to jupyter notebook</span>
+python -m ipykernel install --user --name myenv --display-name <span style="color:#b44">&#34;Python (myenv)&#34;</span>
+</code></pre></div></li>
 <li>
 <p><strong>Install Pytorch</strong></p>
 <p>You can go check <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener">Pytorch&rsquo;s website</a> to see all the installation options.</p>
