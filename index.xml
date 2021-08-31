@@ -38,11 +38,10 @@ sudo apt install make sudo apt install gcc   Disable Nouveau kernel driver.
       
       <guid>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-windows/</guid>
       <description>Install CUDA and cuDNN
-This step is only for those who want to use GPU. Before downloading CUDA and cuDNN from NVIDIA, check the version requirements on PyTorch website.
+This step is only necessary for those who want to use GPU. Before downloading CUDA and cuDNN from NVIDIA, check the version requirements on PyTorch website.
   Install Anaconda or Miniconda depends on your taste.
 Go to anaconda or miniconda&amp;rsquo;s website and download the .exe installer for your system. Rember to check the set conda as enviroment viable box.
-  Install jupyter
-conda install -y jupyter   Create the enviroment named torch</description>
+  Install jupyter</description>
     </item>
     
     <item>
