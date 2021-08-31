@@ -6,12 +6,12 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="Install Anaconda or Miniconda depends on your taste.
+<meta name="description" content="Install CUDA and cuDNN
+This step is only for those who want to use GPU. Before downloading CUDA and cuDNN from NVIDIA, check the version requirements on PyTorch website.
+  Install Anaconda or Miniconda depends on your taste.
 Go to anaconda or miniconda&rsquo;s website and download the .exe installer for your system. Rember to check the set conda as enviroment viable box.
   Install jupyter
-conda install -y jupyter
-  Create the enviroment named torch
-conda create --name torch python=3.8 # created a conda enviroment named &#39;torch&#39; # If you use cpu only, you need to change it to python 3.">
+conda install -y jupyter   Create the enviroment named torch">
 <meta name="generator" content="Hugo 0.83.1" />
 
 
@@ -78,14 +78,14 @@ conda create --name torch python=3.8 # created a conda enviroment named &#39;tor
         </span>
         <span>
           
-            199 words
+            228 words
           
         </span>
         <span class="split">
           ·
         </span>
         <span>
-          1 minute read
+          2 minute read
         </span>
     </div>
 
@@ -106,13 +106,17 @@ conda create --name torch python=3.8 # created a conda enviroment named &#39;tor
     <div class="content">
       <ol>
 <li>
+<p><strong>Install CUDA and cuDNN</strong></p>
+<p>This step is only for those who want to use GPU. Before downloading <a href="https://developer.nvidia.com/cuda-downloads" target="_blank" rel="noopener">CUDA</a> and <a href="https://developer.nvidia.com/rdp/cudnn-archive" target="_blank" rel="noopener">cuDNN</a> from NVIDIA, check the version requirements on <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener">PyTorch website</a>.</p>
+</li>
+<li>
 <p><strong>Install Anaconda or Miniconda depends on your taste.</strong></p>
 <p>Go to anaconda or miniconda&rsquo;s website and download the .exe installer for your system. Rember to check the set conda as enviroment viable box.</p>
 </li>
 <li>
 <p><strong>Install jupyter</strong></p>
-<p>conda install -y jupyter</p>
-</li>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda install -y jupyter
+</code></pre></div></li>
 <li>
 <p><strong>Create the enviroment named torch</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda create --name torch <span style="color:#b8860b">python</span><span style="color:#666">=</span>3.8
