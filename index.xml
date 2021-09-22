@@ -53,12 +53,9 @@ A PhD student&amp;rsquo;s blog which contains a lot of very deep and interesting
       <pubDate>Thu, 17 Jun 2021 10:21:38 +0800</pubDate>
       
       <guid>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-ubuntu/</guid>
-      <description>Install Anaconda or Miniconda depends on your taste.
-Go to anaconda or miniconda&amp;rsquo;s website and download the .sh file for your system. Go into the terminal use &amp;ldquo;chmod +x filename&amp;rdquo; command to the .sh file then run it. Always click yes to finish installation.
-  Install jupyter
-conda install -y jupyter
-  Create the enviroment named torch
-conda create --name torch python=3.8 # created a conda enviroment named &amp;#39;torch&amp;#39; # If you use cpu only, you need to change it to python 3.</description>
+      <description>Why virtual environment is needed? It is very common in deep learning that each project has different dependency requirements, which makes environment management important. Conda can help us set multiple virtual environments and keep them independent from each other. Thus, all of your ML projects can run smoothly.
+Set up virtual environment for pytorch using conda   Install Anaconda or Miniconda depends on your taste.
+Go to anaconda or miniconda&amp;rsquo;s website and download the .</description>
     </item>
     
     <item>
