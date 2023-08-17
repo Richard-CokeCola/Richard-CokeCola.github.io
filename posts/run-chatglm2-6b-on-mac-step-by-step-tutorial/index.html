@@ -77,7 +77,7 @@
         </span>
         <span>
           
-            567 words
+            585 words
           
         </span>
         <span class="split">
@@ -159,7 +159,7 @@ conda activate llm
 </code></pre></div><p>The output should show:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">tensor([<span style="color:#666">1.</span>], device<span style="color:#666">=</span><span style="color:#b44">&#39;mps:0&#39;</span>)
 </code></pre></div><h3 id="install-other-requirements">Install other requirements <a href="#install-other-requirements" class="anchor"></a></h3><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pip install protobuf transformers<span style="color:#666">==</span><span style="color:#666">4.30</span><span style="color:#666">.</span><span style="color:#666">2</span> cpm_kernels gradio mdtex2html sentencepiece accelerate
-</code></pre></div><h2 id="download-build--run">Download, build &amp; run <a href="#download-build--run" class="anchor"></a></h2><p><a href="https://huggingface.co/Xorbits/chatglm2-6B-GGML/tree/main" target="_blank" rel="noopener">Download model files</a> first. Different model file means:</p>
+</code></pre></div><h2 id="download-build--run">Download, build &amp; run <a href="#download-build--run" class="anchor"></a></h2><p><a href="https://huggingface.co/Xorbits/chatglm2-6B-GGML/tree/main" target="_blank" rel="noopener">Download model files</a> first. The model files are:</p>
 <blockquote>
 <ul>
 <li><code>q4_0</code>: 4-bit integer quantization with fp16 scales.</li>
@@ -174,7 +174,9 @@ conda activate llm
 <p>Then download chatglm.cpp model by using:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone --recursive https://github.com/li-plus/chatglm.cpp.git <span style="color:#666">&amp;&amp;</span> <span style="color:#a2f">cd</span> chatglm.cpp
 </code></pre></div><p><strong>Build and run:</strong></p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cmake -B build
+<p>If you have a CUDA GPU, you should use:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cmake -B build -DGGML_CUBLAS<span style="color:#666">=</span>ON <span style="color:#666">&amp;&amp;</span> cmake --build build -j
+</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cmake -B build
 cmake --build build -j --config Release
 </code></pre></div><p><strong>Then you are ready to try:</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># replace the &#39;chatglm-ggml.bin&#39; to the file you use</span>
