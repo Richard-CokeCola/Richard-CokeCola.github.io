@@ -77,7 +77,7 @@
         </span>
         <span>
           
-            632 words
+            557 words
           
         </span>
         <span class="split">
@@ -107,8 +107,7 @@
         <li><a href="#install-other-requirements">Install other requirements</a></li>
       </ul>
     </li>
-    <li><a href="#download-model-files-and-build-the-model">Download model files and build the model</a></li>
-    <li><a href="#run-the-model">Run the model</a></li>
+    <li><a href="#download-build--run">Download, build &amp; run</a></li>
     <li><a href="#reference">Reference</a></li>
   </ul>
 </nav>
@@ -160,7 +159,7 @@ conda activate llm
 </code></pre></div><p>The output should show:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">tensor([<span style="color:#666">1.</span>], device<span style="color:#666">=</span><span style="color:#b44">&#39;mps:0&#39;</span>)
 </code></pre></div><h3 id="install-other-requirements">Install other requirements <a href="#install-other-requirements" class="anchor"></a></h3><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pip install protobuf transformers<span style="color:#666">==</span><span style="color:#666">4.30</span><span style="color:#666">.</span><span style="color:#666">2</span> cpm_kernels gradio mdtex2html sentencepiece accelerate
-</code></pre></div><h2 id="download-model-files-and-build-the-model">Download model files and build the model <a href="#download-model-files-and-build-the-model" class="anchor"></a></h2><p><a href="https://huggingface.co/Xorbits/chatglm2-6B-GGML/tree/main" target="_blank" rel="noopener">Download model files</a> first. Different model file means:</p>
+</code></pre></div><h2 id="download-build--run">Download, build &amp; run <a href="#download-build--run" class="anchor"></a></h2><p><a href="https://huggingface.co/Xorbits/chatglm2-6B-GGML/tree/main" target="_blank" rel="noopener">Download model files</a> first. Different model file means:</p>
 <blockquote>
 <ul>
 <li><code>q4_0</code>: 4-bit integer quantization with fp16 scales.</li>
@@ -178,16 +177,12 @@ conda activate llm
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cmake -B build
 cmake --build build -j --config Release
 </code></pre></div><p><strong>Then you are ready to try:</strong></p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#666">./</span>build<span style="color:#666">/</span><span style="color:#a2f">bin</span><span style="color:#666">/</span>main <span style="color:#666">-</span>m chatglm<span style="color:#666">-</span>ggml<span style="color:#666">.</span>bin <span style="color:#666">-</span>p <span style="">你好</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># replace the &#39;chatglm-ggml.bin&#39; to the file you use</span>
+<span style="color:#666">./</span>build<span style="color:#666">/</span><span style="color:#a2f">bin</span><span style="color:#666">/</span>main <span style="color:#666">-</span>m chatglm<span style="color:#666">-</span>ggml<span style="color:#666">.</span>bin <span style="color:#666">-</span>p <span style="">你好</span>
 <span style="color:#080;font-style:italic"># 你好👋！我是人工智能助手 ChatGLM-6B，很高兴见到你，欢迎问我任何问题。</span>
-</code></pre></div><h2 id="run-the-model">Run the model <a href="#run-the-model" class="anchor"></a></h2><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">from</span> <span style="color:#00f;font-weight:bold">transformers</span> <span style="color:#a2f;font-weight:bold">import</span> AutoTokenizer, AutoModel
-tokenizer <span style="color:#666">=</span> AutoTokenizer<span style="color:#666">.</span>from_pretrained(<span style="color:#b44">&#34;THUDM/chatglm2-6b&#34;</span>, trust_remote_code<span style="color:#666">=</span>True)
-model <span style="color:#666">=</span> AutoModel<span style="color:#666">.</span>from_pretrained(<span style="color:#b44">&#34;your local path&#34;</span>, trust_remote_code<span style="color:#666">=</span>True)<span style="color:#666">.</span>to(<span style="color:#b44">&#39;mps&#39;</span>)
-model <span style="color:#666">=</span> model<span style="color:#666">.</span>eval()
-response, history <span style="color:#666">=</span> model<span style="color:#666">.</span>chat(tokenizer, <span style="color:#b44">&#34;你好&#34;</span>, history<span style="color:#666">=</span>[])
-<span style="color:#a2f;font-weight:bold">print</span>(response)
-<span style="">你好👋!我是人工智能助手</span> ChatGLM2<span style="color:#666">-</span><span style="color:#666">6</span>B,<span style="">很高兴见到你</span>,<span style="">欢迎问我任何问题。</span>
-</code></pre></div><p>r</p>
+</code></pre></div><p><p class="markdown-image">
+  <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/llm.jpg" alt="llm"  title="LLM on Mac" />
+</p></p>
 <h2 id="reference">Reference <a href="#reference" class="anchor"></a></h2><ol>
 <li><strong><a href="https://huggingface.co/docs/accelerate/usage_guides/mps" target="_blank" rel="noopener">What is MPS backend?</a></strong></li>
 <li><strong><a href="https://mac.r-project.org/openmp/" target="_blank" rel="noopener">OpenMP on macOS with Xcode tools</a></strong></li>
