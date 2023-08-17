@@ -6,7 +6,16 @@
     <description>Recent content on Richard&#39;s sogni d&#39;oro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Mar 2023 16:55:12 +0800</lastBuildDate><atom:link href="https://richard-cokecola.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Jun 2023 19:38:51 +0800</lastBuildDate><atom:link href="https://richard-cokecola.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Run ChatGLM2-6B on Mac -- Step bt step tutorial</title>
+      <link>https://richard-cokecola.github.io/posts/run-chatglm2-6b-on-mac-step-bt-step-tutorial/</link>
+      <pubDate>Tue, 27 Jun 2023 19:38:51 +0800</pubDate>
+      
+      <guid>https://richard-cokecola.github.io/posts/run-chatglm2-6b-on-mac-step-bt-step-tutorial/</guid>
+      <description>Apple has released mps backend ^1^ which boosts Macs that have AMD GPU or M series processor runs an LLM locally. This tutorial gives step-by-step instructions to run the ChatGLM2-6B model on a 16-inch MacBook Pro (2019) with 32G memory and AMD Radeon Pro 5500M 4 GB GPU. Build the enviroment Install openMP curl -O https://mac.r-project.org/openmp/openmp-12.0.1-darwin20-Release.tar.gz sudo tar fvxz openmp-12.0.1-darwin20-Release.tar.gz -C / The contained set of files is the same</description>
+    </item>
+    
     <item>
       <title>Whole-house networking solution based on software router </title>
       <link>https://richard-cokecola.github.io/posts/whole-house-networking-solution-based-on-software-router/</link>

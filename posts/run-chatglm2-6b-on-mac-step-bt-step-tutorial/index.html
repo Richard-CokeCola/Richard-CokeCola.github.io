@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Run ChatGLM2-6B on Mac -- Step bt step tutorial | Richard&#39;s sogni d&#39;oro</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Apple has released mps backend ^1^ which boosts Macs that have AMD GPU or M series processor runs an LLM locally. This tutorial gives step-by-step instructions to run the ChatGLM2-6B model on a 16-inch MacBook Pro (2019) with 32G memory and AMD Radeon Pro 5500M 4 GB GPU. Build the enviroment Install openMP curl -O https://mac.r-project.org/openmp/openmp-12.0.1-darwin20-Release.tar.gz sudo tar fvxz openmp-12.0.1-darwin20-Release.tar.gz -C / The contained set of files is the same">
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+<meta name="generator" content="Hugo 0.83.1" />
+
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script data-ad-client="ca-pub-3246815983951661" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+ 
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HQLWYE4FVQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HQLWYE4FVQ');
+</script>
+
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	<a href="/posts">Archive</a>
+	<a href="/tags">Tags</a>
+	<a href="/about">About</a>
+
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Run ChatGLM2-6B on Mac -- Step bt step tutorial</h1>
+
+    <div class="tip">
+        <span>
+          Jun 27, 2023 19:38
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          
+            632 words
+          
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          2 minute read
+        </span>
+    </div>
+
+    
+    
+        <aside class="toc">
+  <details>
+      <summary>Table of Contents
+      </summary>
+      <div>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#build-the-enviroment">Build the enviroment</a>
+      <ul>
+        <li><a href="#install-openmp">Install openMP</a></li>
+        <li><a href="#install-the-latest-version-of-conda">Install the latest version of Conda</a></li>
+        <li><a href="#download-anaconda">Download Anaconda</a></li>
+        <li><a href="#install-pytorch-nightly">Install PyTorch-Nightly</a></li>
+        <li><a href="#verify">Verify</a></li>
+        <li><a href="#install-other-requirements">Install other requirements</a></li>
+      </ul>
+    </li>
+    <li><a href="#download-model-files-and-build-the-model">Download model files and build the model</a></li>
+    <li><a href="#run-the-model">Run the model</a></li>
+    <li><a href="#reference">Reference</a></li>
+  </ul>
+</nav>
+      </div>
+  </details>
+</aside>
+    
+
+
+    <div class="content">
+      <p>Apple has released mps backend ^1^ which boosts Macs that have AMD GPU or M series processor runs an LLM locally. This tutorial gives step-by-step instructions to run the ChatGLM2-6B model on a 16-inch MacBook Pro (2019) with 32G memory and AMD Radeon Pro 5500M 4 GB GPU.</p>
+<h2 id="build-the-enviroment">Build the enviroment <a href="#build-the-enviroment" class="anchor"></a></h2><h3 id="install-openmp">Install openMP <a href="#install-openmp" class="anchor"></a></h3><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -O https://mac.r-project.org/openmp/openmp-12.0.1-darwin20-Release.tar.gz
+sudo tar fvxz openmp-12.0.1-darwin20-Release.tar.gz -C /
+</code></pre></div><p>The contained set of files is the same in all tar balls:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">usr/local/lib/libomp.dylib
+usr/local/include/ompt.h
+usr/local/include/omp.h
+usr/local/include/omp-tools.h
+</code></pre></div><h3 id="install-the-latest-version-of-conda">Install the latest version of Conda <a href="#install-the-latest-version-of-conda" class="anchor"></a></h3><p>You can use either Anaconda or pip. Please note that environment setup will differ between a Mac with Apple silicon and a Mac with Intel x86.</p>
+<p>Use the PyTorch installation selector <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener">on the installation page</a> to choose Preview (Nightly) for MPS device acceleration. The MPS backend support is part of the PyTorch 1.12 official release. The Preview (Nightly) build of PyTorch will provide the latest <code>mps</code> support on your device.</p>
+<h3 id="download-anaconda">Download Anaconda <a href="#download-anaconda" class="anchor"></a></h3><p><strong>For Apple silicon:</strong></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+sh Miniconda3-latest-MacOSX-arm64.sh
+</code></pre></div><p><strong>For x86:</strong></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+sh Miniconda3-latest-MacOSX-x86_64.sh
+</code></pre></div><p>You can use preinstalled <code>pip3</code>, which comes with macOS. Alternatively, you can install it from the Python website or the Homebrew package manager.</p>
+<h3 id="install-pytorch-nightly">Install PyTorch-Nightly <a href="#install-pytorch-nightly" class="anchor"></a></h3><p>Before install all the dependencies, create a new conda env:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># create the env named llm</span>
+conda create <span style="color:#666">--</span>name llm
+<span style="color:#080;font-style:italic"># enter the env that just created</span>
+conda activate llm
+</code></pre></div><p>Now we are in the env, start installing. You can choose to use conda or pip.</p>
+<p><strong>Using conda:</strong></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda install pytorch torchvision torchaudio -c pytorch-nightly
+</code></pre></div><p><strong>Or using pip:</strong></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip3 install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu
+</code></pre></div><p><strong>Or building from source:</strong></p>
+<p>Building PyTorch with MPS support requires Xcode 13.3.1 or later. You can download the latest public Xcode release on the Mac App Store or the latest beta release on the <a href="https://apps.apple.com/us/app/xcode/id497799835?mt=12" target="_blank" rel="noopener">Mac App Store</a> or the latest beta release on the <a href="https://developer.apple.com/download/applications/" target="_blank" rel="noopener">Apple Developer website</a>. The <code>USE_MPS</code> environment variable controls building PyTorch and includes MPS support.</p>
+<p>To build PyTorch, follow the instructions provided on the <a href="https://github.com/pytorch/pytorch#from-source" target="_blank" rel="noopener">PyTorch website</a>.</p>
+<h3 id="verify">Verify <a href="#verify" class="anchor"></a></h3><p>You can verify mps support using a simple Python script:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">torch</span>
+<span style="color:#a2f;font-weight:bold">if</span> torch<span style="color:#666">.</span>backends<span style="color:#666">.</span>mps<span style="color:#666">.</span>is_available():
+    mps_device <span style="color:#666">=</span> torch<span style="color:#666">.</span>device(<span style="color:#b44">&#34;mps&#34;</span>)
+    x <span style="color:#666">=</span> torch<span style="color:#666">.</span>ones(<span style="color:#666">1</span>, device<span style="color:#666">=</span>mps_device)
+    <span style="color:#a2f;font-weight:bold">print</span> (x)
+<span style="color:#a2f;font-weight:bold">else</span>:
+    <span style="color:#a2f;font-weight:bold">print</span> (<span style="color:#b44">&#34;MPS device not found.&#34;</span>)
+</code></pre></div><p>The output should show:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">tensor([<span style="color:#666">1.</span>], device<span style="color:#666">=</span><span style="color:#b44">&#39;mps:0&#39;</span>)
+</code></pre></div><h3 id="install-other-requirements">Install other requirements <a href="#install-other-requirements" class="anchor"></a></h3><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pip install protobuf transformers<span style="color:#666">==</span><span style="color:#666">4.30</span><span style="color:#666">.</span><span style="color:#666">2</span> cpm_kernels gradio mdtex2html sentencepiece accelerate
+</code></pre></div><h2 id="download-model-files-and-build-the-model">Download model files and build the model <a href="#download-model-files-and-build-the-model" class="anchor"></a></h2><p><a href="https://huggingface.co/Xorbits/chatglm2-6B-GGML/tree/main" target="_blank" rel="noopener">Download model files</a> first. Different model file means:</p>
+<blockquote>
+<ul>
+<li><code>q4_0</code>: 4-bit integer quantization with fp16 scales.</li>
+<li><code>q4_1</code>: 4-bit integer quantization with fp16 scales and minimum values.</li>
+<li><code>q5_0</code>: 5-bit integer quantization with fp16 scales.</li>
+<li><code>q5_1</code>: 5-bit integer quantization with fp16 scales and minimum values.</li>
+<li><code>q8_0</code>: 8-bit integer quantization with fp16 scales.</li>
+<li><code>f16</code>: half precision floating point weights without quantization.</li>
+<li><code>f32</code>: single precision floating point weights without quantization.</li>
+</ul>
+</blockquote>
+<p>Then download chatglm.cpp model by using:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone --recursive https://github.com/li-plus/chatglm.cpp.git <span style="color:#666">&amp;&amp;</span> <span style="color:#a2f">cd</span> chatglm.cpp
+</code></pre></div><p><strong>Build and run:</strong></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cmake -B build
+cmake --build build -j --config Release
+</code></pre></div><p><strong>Then you are ready to try:</strong></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#666">./</span>build<span style="color:#666">/</span><span style="color:#a2f">bin</span><span style="color:#666">/</span>main <span style="color:#666">-</span>m chatglm<span style="color:#666">-</span>ggml<span style="color:#666">.</span>bin <span style="color:#666">-</span>p <span style="">你好</span>
+<span style="color:#080;font-style:italic"># 你好👋！我是人工智能助手 ChatGLM-6B，很高兴见到你，欢迎问我任何问题。</span>
+</code></pre></div><h2 id="run-the-model">Run the model <a href="#run-the-model" class="anchor"></a></h2><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">from</span> <span style="color:#00f;font-weight:bold">transformers</span> <span style="color:#a2f;font-weight:bold">import</span> AutoTokenizer, AutoModel
+tokenizer <span style="color:#666">=</span> AutoTokenizer<span style="color:#666">.</span>from_pretrained(<span style="color:#b44">&#34;THUDM/chatglm2-6b&#34;</span>, trust_remote_code<span style="color:#666">=</span>True)
+model <span style="color:#666">=</span> AutoModel<span style="color:#666">.</span>from_pretrained(<span style="color:#b44">&#34;your local path&#34;</span>, trust_remote_code<span style="color:#666">=</span>True)<span style="color:#666">.</span>to(<span style="color:#b44">&#39;mps&#39;</span>)
+model <span style="color:#666">=</span> model<span style="color:#666">.</span>eval()
+response, history <span style="color:#666">=</span> model<span style="color:#666">.</span>chat(tokenizer, <span style="color:#b44">&#34;你好&#34;</span>, history<span style="color:#666">=</span>[])
+<span style="color:#a2f;font-weight:bold">print</span>(response)
+<span style="">你好👋!我是人工智能助手</span> ChatGLM2<span style="color:#666">-</span><span style="color:#666">6</span>B,<span style="">很高兴见到你</span>,<span style="">欢迎问我任何问题。</span>
+</code></pre></div><p>r</p>
+<h2 id="reference">Reference <a href="#reference" class="anchor"></a></h2><ol>
+<li><strong><a href="https://huggingface.co/docs/accelerate/usage_guides/mps" target="_blank" rel="noopener">What is MPS backend?</a></strong></li>
+<li><strong><a href="https://mac.r-project.org/openmp/" target="_blank" rel="noopener">OpenMP on macOS with Xcode tools</a></strong></li>
+<li><strong><a href="https://developer.apple.com/metal/pytorch/" target="_blank" rel="noopener">Accelerated PyTorch training on Mac</a></strong></li>
+<li><strong><a href="https://github.com/THUDM/ChatGLM2-6B" target="_blank" rel="noopener">ChatGLM2-6B Github page</a></strong></li>
+<li><strong><a href="https://github.com/oobabooga/text-generation-webui" target="_blank" rel="noopener">text-generation-webui Github page</a></strong></li>
+<li><a href="https://github.com/li-plus/chatglm.cpp">https://github.com/li-plus/chatglm.cpp</a></li>
+</ol>
+
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="https://richard-cokecola.github.io/tags/tutorial"> tutorial </a>
+            
+                <a href="https://richard-cokecola.github.io/tags/ai">AI</a>
+            
+        </div>
+    
+    
+    
+  <div id="comment">
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-richard-cokecola-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+        <div id="social">
+
+
+    <a class="symbol" href="https://github.com/Richard-CokeCola/" rel="me" target="_blank">
+        
+        <svg fill="#bbbbbb" width="28" height="28"  viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>Github</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-Icons---Rounded-Black" transform="translate(-264.000000, -939.000000)">
+            <g id="Github" transform="translate(264.000000, 939.000000)">
+                <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" fill="#bbbbbb"></path>
+                <path d="M35.9985,13 C22.746,13 12,23.7870921 12,37.096644 C12,47.7406712 18.876,56.7718301 28.4145,59.9584121 C29.6145,60.1797862 30.0525,59.4358488 30.0525,58.7973276 C30.0525,58.2250681 30.0315,56.7100863 30.0195,54.6996482 C23.343,56.1558981 21.9345,51.4693938 21.9345,51.4693938 C20.844,48.6864054 19.2705,47.9454799 19.2705,47.9454799 C17.091,46.4500754 19.4355,46.4801943 19.4355,46.4801943 C21.843,46.6503662 23.1105,48.9634994 23.1105,48.9634994 C25.2525,52.6455377 28.728,51.5823398 30.096,50.9649018 C30.3135,49.4077535 30.9345,48.3460615 31.62,47.7436831 C26.2905,47.1352808 20.688,45.0691228 20.688,35.8361671 C20.688,33.2052792 21.6225,31.0547881 23.1585,29.3696344 C22.911,28.7597262 22.0875,26.3110578 23.3925,22.9934585 C23.3925,22.9934585 25.4085,22.3459017 29.9925,25.4632101 C31.908,24.9285993 33.96,24.6620468 36.0015,24.6515052 C38.04,24.6620468 40.0935,24.9285993 42.0105,25.4632101 C46.5915,22.3459017 48.603,22.9934585 48.603,22.9934585 C49.9125,26.3110578 49.089,28.7597262 48.8415,29.3696344 C50.3805,31.0547881 51.309,33.2052792 51.309,35.8361671 C51.309,45.0917119 45.6975,47.1292571 40.3515,47.7256117 C41.2125,48.4695491 41.9805,49.9393525 41.9805,52.1877301 C41.9805,55.4089489 41.9505,58.0067059 41.9505,58.7973276 C41.9505,59.4418726 42.3825,60.1918338 43.6005,59.9554002 C53.13,56.7627944 60,47.7376593 60,37.096644 C60,23.7870921 49.254,13 35.9985,13" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+    </a>
+
+
+</div>
+
+    
+
+    <div class="copyright">
+    
+        An engineer who is interested in AI, music, cooking, and some other things. You can contact me via email: <a href="mailto:richardwei@protonmail.com">richardwei@protonmail.com</a>
+    
+    </div>
+
+    
+      <div class="powerby">
+        Site by <a href="https://richard-cokecola.github.io">Richard</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>
