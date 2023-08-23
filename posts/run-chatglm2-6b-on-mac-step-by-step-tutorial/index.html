@@ -77,7 +77,7 @@
         </span>
         <span>
           
-            586 words
+            643 words
           
         </span>
         <span class="split">
@@ -176,7 +176,10 @@ conda activate llm
 </code></pre></div><p><strong>Build and run:</strong></p>
 <p>If you have a CUDA GPU, you should use:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cmake -B build -DGGML_CUBLAS<span style="color:#666">=</span>ON <span style="color:#666">&amp;&amp;</span> cmake --build build -j
-</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cmake -B build
+</code></pre></div><p>On Mac, you can use:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cmake -B build -DGGML_METAL<span style="color:#666">=</span>ON <span style="color:#666">&amp;&amp;</span> cmake --build build -j
+</code></pre></div><p>Only use the CPU:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cmake -B build
 cmake --build build -j --config Release
 </code></pre></div><p><strong>Then you are ready to try:</strong></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-style:italic"># replace the &#39;chatglm-ggml.bin&#39; to the file you use</span>
@@ -186,7 +189,12 @@ cmake --build build -j --config Release
 <p class="markdown-image">
   <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/llm2.jpg" alt="llm"  title="LLM on Mac" />
 </p></p>
-<p>Test the model in Chinese:
+<p>Input the same question under the MPS backend to enable my GPU in the task:</p>
+<p><p class="markdown-image">
+  <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/llm3.jpg" alt="llm"  title="LLM on Mac" />
+</p></p>
+<p>It shows that MPS backend&rsquo;s prompt time is faster than only use CPU. However, MPS backend&rsquo;s output time is slower than only use CPU.</p>
+<p>Test the model&rsquo;s Chinese capability:
 <p class="markdown-image">
   <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/llm.jpg" alt="llm"  title="LLM on Mac" />
 </p></p>
