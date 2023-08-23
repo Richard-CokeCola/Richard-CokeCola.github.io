@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Richard&#39;s Lullaby</title>
+    <link>https://richard-cokecola.github.io/posts/</link>
+    <description>Recent content in Posts on Richard&#39;s Lullaby</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Aug 2021 08:46:38 +0800</lastBuildDate><atom:link href="https://richard-cokecola.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Nvidia GPU driver on Ubuntu</title>
+      <link>https://richard-cokecola.github.io/posts/install-nvidia-gpu-driver-on-ubuntu/</link>
+      <pubDate>Mon, 09 Aug 2021 08:46:38 +0800</pubDate>
+      
+      <guid>https://richard-cokecola.github.io/posts/install-nvidia-gpu-driver-on-ubuntu/</guid>
+      <description>Install Nvidia driver on Ubuntu can be very tricky. Sometimes it goes extremely smooth while sometime it just doesn&amp;rsquo;t work. Follow these following steps, it should make it easier.
+  Download Nvidia driver to your Ubuntu machine from its website. It is a .run file.
+  Install make and gcc.
+sudo apt install make sudo apt install gcc   Disable Nouveau kernel driver.
+# Create a file sudo nano /etc/modprobe.</description>
+    </item>
+    
+    <item>
+      <title>Install Pytorch for GPU and CPU using Conda on Windows</title>
+      <link>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-windows/</link>
+      <pubDate>Thu, 05 Aug 2021 11:13:29 +0800</pubDate>
+      
+      <guid>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-windows/</guid>
+      <description>Why virtual environment is needed? It is very common in deep learning that each project has different dependency requirements, which makes environment management important. Conda can help us set multiple virtual environments and keep them independent from each other. Thus, all of your ML projects can run smoothly.
+Set up virtual environment for pytorch using conda   Install CUDA and cuDNN
+This step is only necessary for those who has a GPU.</description>
+    </item>
+    
+    <item>
+      <title>Blogs that worth reading</title>
+      <link>https://richard-cokecola.github.io/posts/blogs-that-worth-reading/</link>
+      <pubDate>Tue, 29 Jun 2021 15:21:27 +0800</pubDate>
+      
+      <guid>https://richard-cokecola.github.io/posts/blogs-that-worth-reading/</guid>
+      <description>Everyone is an island, and so do the blogs. It makes us cherish things we know and people we love.
+Here are some blogs I found very interesting.
+This post will update continuously.
+  https://charlesliuyx.github.io
+This blog was writen in Chinese, topics including machine learning, blockchain, Chinese ancient poems, etc.
+  https://yiqinfu.github.io
+A PhD student&amp;rsquo;s blog which contains a lot of very deep and interesting thoughts.
+ Born and raised in China, Yiqin (pronounced ee-ching) Fu spent many of her formative years in the U.</description>
+    </item>
+    
+    <item>
+      <title>Install Pytorch for GPU and CPU using Conda on Ubuntu</title>
+      <link>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-ubuntu/</link>
+      <pubDate>Thu, 17 Jun 2021 10:21:38 +0800</pubDate>
+      
+      <guid>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-ubuntu/</guid>
+      <description>Why virtual environment is needed? It is very common in deep learning that each project has different dependency requirements, which makes environment management important. Conda can help us set multiple virtual environments and keep them independent from each other. Thus, all of your ML projects can run smoothly.
+Set up virtual environment for pytorch using conda   Install Anaconda or Miniconda depends on your taste.
+Go to anaconda or miniconda&amp;rsquo;s website and download the .</description>
+    </item>
+    
+    <item>
+      <title>Run YOLO v5 on Jetson developer kit step by step tutorial</title>
+      <link>https://richard-cokecola.github.io/posts/run-yolo-v5-on-jetson-developer-kit-step-by-step-tutorial/</link>
+      <pubDate>Fri, 04 Jun 2021 09:01:47 +0800</pubDate>
+      
+      <guid>https://richard-cokecola.github.io/posts/run-yolo-v5-on-jetson-developer-kit-step-by-step-tutorial/</guid>
+      <description>What&amp;rsquo;s the goal? To run YOLOv5 on jetson developer kit to achieve real-time object detection. The following instructions has been tested on: Jetson nano Jetson Xavier NX What you need: A Jetson nano (If you are using other Jetson developer kit from Nvidia, I am sure you can take this as reference as well.) A SD card and power suply which meets the needs. Another computer or laptop with internet</description>
+    </item>
+    
+    <item>
+      <title>Richard&#39;s fried chicken recipe</title>
+      <link>https://richard-cokecola.github.io/posts/richards-fried-chicken-recipe/</link>
+      <pubDate>Thu, 03 Jun 2021 15:46:13 +0800</pubDate>
+      
+      <guid>https://richard-cokecola.github.io/posts/richards-fried-chicken-recipe/</guid>
+      <description>Why fried chicken Come on, man. What is the definition of good fried chicken Looking good (golden shell outside) Juicy inside Chicken meet has strong mixed and balanced taste even deep inside Raw materials Chicken leg, thigh, breast, or whatever you like. Oil (A LOT) Seasoning: Sea salt (if you do not have sea salt then normal salt) Chinese 13 Spices Mix (王守義十三香)</description>
+    </item>
+    
+    <item>
+      <title>Why I want to write my blog?</title>
+      <link>https://richard-cokecola.github.io/posts/why-i-want-to-write-my-blog/</link>
+      <pubDate>Thu, 03 Jun 2021 14:12:23 +0800</pubDate>
+      
+      <guid>https://richard-cokecola.github.io/posts/why-i-want-to-write-my-blog/</guid>
+      <description>To record
+To witness
+To help&amp;hellip; hope so
+To leave a piece of me in this beautiful world that has been filled with absurdity</description>
+    </item>
+    
+  </channel>
+</rss>

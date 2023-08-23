@@ -36,7 +36,7 @@ sudo apt install make sudo apt install gcc   Disable Nouveau kernel driver.
       
       <guid>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-windows/</guid>
       <description>Why virtual environment is needed? It is very common in deep learning that each project has different dependency requirements, which makes environment management important. Conda can help us set multiple virtual environments and keep them independent from each other. Thus, all of your ML projects can run smoothly.
-Set up virtual environment for pytorch using conda   Install CUDA and cuDNN
+Set up a virtual environment for pytorch using conda   Install CUDA and cuDNN
 This step is only necessary for those who has a GPU.</description>
     </item>
     

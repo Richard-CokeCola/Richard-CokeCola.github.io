@@ -45,8 +45,24 @@ sudo apt install make sudo apt install gcc   Disable Nouveau kernel driver.
       
       <guid>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-windows/</guid>
       <description>Why virtual environment is needed? It is very common in deep learning that each project has different dependency requirements, which makes environment management important. Conda can help us set multiple virtual environments and keep them independent from each other. Thus, all of your ML projects can run smoothly.
-Set up virtual environment for pytorch using conda   Install CUDA and cuDNN
+Set up a virtual environment for pytorch using conda   Install CUDA and cuDNN
 This step is only necessary for those who has a GPU.</description>
+    </item>
+    
+    <item>
+      <title>Blogs that worth reading</title>
+      <link>https://richard-cokecola.github.io/posts/blogs-that-worth-reading/</link>
+      <pubDate>Tue, 29 Jun 2021 15:21:27 +0800</pubDate>
+      
+      <guid>https://richard-cokecola.github.io/posts/blogs-that-worth-reading/</guid>
+      <description>Everyone is an island, and so do the blogs. It makes us cherish things we know and people we love.
+Here are some blogs I found very interesting.
+This post will update continuously.
+  https://charlesliuyx.github.io
+This blog was writen in Chinese, topics including machine learning, blockchain, Chinese ancient poems, etc.
+  https://yiqinfu.github.io
+A PhD student&amp;rsquo;s blog which contains a lot of very deep and interesting thoughts.
+ Born and raised in China, Yiqin (pronounced ee-ching) Fu spent many of her formative years in the U.</description>
     </item>
     
     <item>
@@ -92,6 +108,18 @@ Go to anaconda or miniconda&amp;rsquo;s website and download the .</description>
       
       <guid>https://richard-cokecola.github.io/posts/richards-fried-chicken-recipe/</guid>
       <description>Why fried chicken Come on, man. What is the definition of good fried chicken Looking good (golden shell outside) Juicy inside Chicken meet has strong mixed and balanced taste even deep inside Raw materials Chicken leg, thigh, breast, or whatever you like. Oil (A LOT) Seasoning: Sea salt (if you do not have sea salt then normal salt) Chinese 13 Spices Mix (王守義十三香)</description>
+    </item>
+    
+    <item>
+      <title>Why I want to write my blog?</title>
+      <link>https://richard-cokecola.github.io/posts/why-i-want-to-write-my-blog/</link>
+      <pubDate>Thu, 03 Jun 2021 14:12:23 +0800</pubDate>
+      
+      <guid>https://richard-cokecola.github.io/posts/why-i-want-to-write-my-blog/</guid>
+      <description>To record
+To witness
+To help&amp;hellip; hope so
+To leave a piece of me in this beautiful world that has been filled with absurdity</description>
     </item>
     
     <item>
