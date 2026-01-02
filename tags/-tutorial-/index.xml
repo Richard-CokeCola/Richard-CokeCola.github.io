@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Tutorial  on Richard&#39;s sogni d&#39;oro</title>
+    <link>https://richard-cokecola.github.io/tags/-tutorial-/</link>
+    <description>Recent content in  Tutorial  on Richard&#39;s sogni d&#39;oro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Jun 2023 19:38:51 +0800</lastBuildDate>
+    <atom:link href="https://richard-cokecola.github.io/tags/-tutorial-/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Local GPT: ChatGLM2-6B on Mac -- Step by step tutorial</title>
+      <link>https://richard-cokecola.github.io/posts/local-gpt-chatglm2-6b-on-mac--step-by-step-tutorial/</link>
+      <pubDate>Tue, 27 Jun 2023 19:38:51 +0800</pubDate>
+      <guid>https://richard-cokecola.github.io/posts/local-gpt-chatglm2-6b-on-mac--step-by-step-tutorial/</guid>
+      <description>&lt;p&gt;Apple has released mps backend ^1^ which boosts Macs that have AMD GPU or M series processor runs an LLM locally. This tutorial gives step-by-step instructions to run the ChatGLM2-6B model on a 16-inch MacBook Pro (2019) with 32G memory and AMD Radeon Pro 5500M 4 GB GPU.&lt;/p&gt;&#xA;&lt;h2 id=&#34;build-the-enviroment&#34;&gt;Build the enviroment &lt;a href=&#34;#build-the-enviroment&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;install-openmp&#34;&gt;Install openMP &lt;a href=&#34;#install-openmp&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -O https://mac.r-project.org/openmp/openmp-12.0.1-darwin20-Release.tar.gz&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo tar fvxz openmp-12.0.1-darwin20-Release.tar.gz -C /&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The contained set of files is the same in all tar balls:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Install Pytorch for GPU and CPU using Conda on Windows</title>
+      <link>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-windows/</link>
+      <pubDate>Thu, 05 Aug 2021 11:13:29 +0800</pubDate>
+      <guid>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-windows/</guid>
+      <description>&lt;h2 id=&#34;why-virtual-environment-is-needed&#34;&gt;Why virtual environment is needed? &lt;a href=&#34;#why-virtual-environment-is-needed&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;It is very common in deep learning that each project has different dependency requirements, which makes environment management important. Conda can help us set multiple virtual environments and keep them independent from each other. Thus, all of your ML projects can run smoothly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;set-up-virtual-environment-for-pytorch-using-conda&#34;&gt;Set up virtual environment for pytorch using conda &lt;a href=&#34;#set-up-virtual-environment-for-pytorch-using-conda&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install CUDA and cuDNN&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This step is only necessary for those who has a GPU. Before downloading &lt;a href=&#34;https://developer.nvidia.com/cuda-downloads&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CUDA&lt;/a&gt; and &lt;a href=&#34;https://developer.nvidia.com/rdp/cudnn-archive&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cuDNN&lt;/a&gt; from NVIDIA, check the version requirements on &lt;a href=&#34;https://pytorch.org/get-started/locally/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PyTorch website&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Install Pytorch for GPU and CPU using Conda on Ubuntu</title>
+      <link>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-ubuntu/</link>
+      <pubDate>Thu, 17 Jun 2021 10:21:38 +0800</pubDate>
+      <guid>https://richard-cokecola.github.io/posts/install-pytorch-for-gpu-and-cpu-using-conda-on-ubuntu/</guid>
+      <description>&lt;h2 id=&#34;why-virtual-environment-is-needed&#34;&gt;Why virtual environment is needed? &lt;a href=&#34;#why-virtual-environment-is-needed&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;It is very common in deep learning that each project has different dependency requirements, which makes environment management important. Conda can help us set multiple virtual environments and keep them independent from each other. Thus, all of your ML projects can run smoothly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;set-up-virtual-environment-for-pytorch-using-conda&#34;&gt;Set up virtual environment for pytorch using conda &lt;a href=&#34;#set-up-virtual-environment-for-pytorch-using-conda&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install Anaconda or Miniconda depends on your taste.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Go to anaconda or miniconda&amp;rsquo;s website and download the .sh file for your system. Go into the terminal use &amp;ldquo;chmod +x filename&amp;rdquo; command to the .sh file then run it. Always click yes to finish installation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Run YOLO v5 on Jetson developer kit step by step tutorial</title>
+      <link>https://richard-cokecola.github.io/posts/run-yolo-v5-on-jetson-developer-kit-step-by-step-tutorial/</link>
+      <pubDate>Fri, 04 Jun 2021 09:01:47 +0800</pubDate>
+      <guid>https://richard-cokecola.github.io/posts/run-yolo-v5-on-jetson-developer-kit-step-by-step-tutorial/</guid>
+      <description>&lt;h2 id=&#34;whats-the-goal&#34;&gt;What&amp;rsquo;s the goal? &lt;a href=&#34;#whats-the-goal&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;To run YOLOv5 on jetson developer kit to achieve real-time object detection.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-following-instructions-has-been-tested-on&#34;&gt;The following instructions has been tested on: &lt;a href=&#34;#the-following-instructions-has-been-tested-on&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;Jetson nano&lt;/li&gt;&#xA;&lt;li&gt;Jetson Xavier NX&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-you-need&#34;&gt;What you need: &lt;a href=&#34;#what-you-need&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;A Jetson nano (If you are using other Jetson developer kit from Nvidia, I am sure you can take this as reference as well.)&lt;/li&gt;&#xA;&lt;li&gt;A SD card and power suply which meets the needs.&lt;/li&gt;&#xA;&lt;li&gt;Another computer or laptop with internet connection and built-in SD card slot or an adapter.&lt;/li&gt;&#xA;&lt;li&gt;A monitor with HDMI port, a USB mouse and a USB keyboard.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Firsty, to start the system on Jetson developer kit, write image to microSD card.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

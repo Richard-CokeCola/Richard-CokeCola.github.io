@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> Direction sign  on Richard&#39;s sogni d&#39;oro</title>
-    <link>https://richard-cokecola.github.io/tags/direction-sign/</link>
-    <description>Recent content in  Direction sign  on Richard&#39;s sogni d&#39;oro</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Direction Sign on Richard&#39;s sogni d&#39;oro</title>
+    <link>http://localhost:1313/tags/direction-sign/</link>
+    <description>Recent content in Direction Sign on Richard&#39;s sogni d&#39;oro</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Jun 2021 15:21:27 +0800</lastBuildDate><atom:link href="https://richard-cokecola.github.io/tags/direction-sign/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Aug 2021 13:22:09 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/direction-sign/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blogs that worth reading</title>
-      <link>https://richard-cokecola.github.io/posts/blogs-that-worth-reading/</link>
-      <pubDate>Tue, 29 Jun 2021 15:21:27 +0800</pubDate>
-      
-      <guid>https://richard-cokecola.github.io/posts/blogs-that-worth-reading/</guid>
-      <description>Everyone is an island, and so do the blogs. It makes us cherish things we know and people we love.
-Here are some blogs I found very interesting.
-This post will update continuously.
-  https://charlesliuyx.github.io
-This blog was writen in Chinese, topics including machine learning, blockchain, Chinese ancient poems, etc.
-  https://yiqinfu.github.io
-A PhD student&amp;rsquo;s blog which contains a lot of very deep and interesting thoughts.
- Born and raised in China, Yiqin (pronounced ee-ching) Fu spent many of her formative years in the U.</description>
+      <title>Introducing my favourite band: Re-tros</title>
+      <link>http://localhost:1313/posts/introducing-my-favourite-band-re-tros/</link>
+      <pubDate>Tue, 10 Aug 2021 13:22:09 +0800</pubDate>
+      <guid>http://localhost:1313/posts/introducing-my-favourite-band-re-tros/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Not finished, this is the beta version of this article.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;1introduction&#34;&gt;1&#x9;Introduction &lt;a href=&#34;#1introduction&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Re-tros, or their full name, Rebuilding the Rights of Statues, is a band from Beijing, China, with three members, Hua Dong, Liu Ming, and Huang Jin. They were a post-punk band, but now they are more experimental and adding more elements to their songs.&lt;/p&gt;&#xA;&lt;p&gt;I found this band on YouTube first in 2020. Thanks to a top-rated music Variety Show called &amp;ldquo;The Big Band&amp;rdquo; that Re-tros was on it as well, YouTube recommended one of their live show to me. After watching just one of their video, I was digging into their mysterious lyrics, creepy melody, unique vibe, perfect-matched vocal, and everything about them.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

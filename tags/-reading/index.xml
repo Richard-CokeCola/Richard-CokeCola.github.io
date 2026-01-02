@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Reading on Richard&#39;s sogni d&#39;oro</title>
+    <link>http://localhost:1313/tags/-reading/</link>
+    <description>Recent content in  Reading on Richard&#39;s sogni d&#39;oro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Jun 2021 15:56:51 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/-reading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading</title>
+      <link>http://localhost:1313/posts/reading/</link>
+      <pubDate>Wed, 09 Jun 2021 15:56:51 +0800</pubDate>
+      <guid>http://localhost:1313/posts/reading/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

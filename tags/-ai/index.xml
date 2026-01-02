@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> AI on Richard&#39;s sogni d&#39;oro</title>
+    <link>http://localhost:1313/tags/-ai/</link>
+    <description>Recent content in  AI on Richard&#39;s sogni d&#39;oro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 May 2025 17:06:36 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Time series forecasting based on Prophet</title>
+      <link>http://localhost:1313/posts/time-series-forecasting-based-on-prophet/</link>
+      <pubDate>Mon, 05 May 2025 17:06:36 +0800</pubDate>
+      <guid>http://localhost:1313/posts/time-series-forecasting-based-on-prophet/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction &lt;a href=&#34;#introduction&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;motivation&#34;&gt;Motivation &lt;a href=&#34;#motivation&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>Interesting AI Websites</title>
+      <link>http://localhost:1313/posts/interesting-ai-websites/</link>
+      <pubDate>Wed, 29 Nov 2023 15:28:13 +0800</pubDate>
+      <guid>http://localhost:1313/posts/interesting-ai-websites/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;A website to help you find the exact word that you are looking for: &lt;a href=&#34;https://www.wordgenie.xyz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.wordgenie.xyz/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;For instance, I went to a beach in UK once, and there is a kind of bridge that goes into the sea to let you walk on, but not to take you to the other side of the sea or river. It is just a wooden walkway on the sea.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;A website to teach you how to make your own music: &lt;a href=&#34;https://learningmusic.ableton.com/zh-Hans/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://learningmusic.ableton.com/zh-Hans/index.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Local LLM on Ubuntu -- step by step tutorial</title>
+      <link>http://localhost:1313/posts/local-llm-on-ubuntu--step-by-step-tutorial/</link>
+      <pubDate>Mon, 21 Aug 2023 10:10:04 +0800</pubDate>
+      <guid>http://localhost:1313/posts/local-llm-on-ubuntu--step-by-step-tutorial/</guid>
+      <description>&lt;p&gt;This tutorial is to let you run LLM on windows.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Set up the environment:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conda create --name torch&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you have a Nvidia GPU:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conda install pytorch torchvision torchaudio pytorch-cuda&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;11.8 -c pytorch -c nvidia&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can go check &lt;a href=&#34;https://pytorch.org/get-started/locally/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pytorch&amp;rsquo;s website&lt;/a&gt; to see all the installation options.&lt;/p&gt;&#xA;&lt;p&gt;If not:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conda install pytorch torchvision torchaudio cpuonly -c pytorch&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;​&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

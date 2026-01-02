@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> AI  on Richard&#39;s sogni d&#39;oro</title>
+    <link>https://richard-cokecola.github.io/tags/-ai-/</link>
+    <description>Recent content in  AI  on Richard&#39;s sogni d&#39;oro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Aug 2021 08:46:38 +0800</lastBuildDate>
+    <atom:link href="https://richard-cokecola.github.io/tags/-ai-/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Nvidia GPU driver on Ubuntu</title>
+      <link>https://richard-cokecola.github.io/posts/install-nvidia-gpu-driver-on-ubuntu/</link>
+      <pubDate>Mon, 09 Aug 2021 08:46:38 +0800</pubDate>
+      <guid>https://richard-cokecola.github.io/posts/install-nvidia-gpu-driver-on-ubuntu/</guid>
+      <description>&lt;p&gt;Install Nvidia driver on Ubuntu can be very tricky. Sometimes it goes extremely smooth while sometime it just doesn&amp;rsquo;t work. Follow these following steps, it should make it easier.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Download Nvidia driver to your Ubuntu machine from its website. It is a .run file.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install make and gcc.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install make    &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install gcc&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Disable Nouveau kernel driver.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#080;font-style:italic&#34;&gt;# Create a file&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nano /etc/modprobe.d/blacklist-nouveau.conf&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;with the following contents:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

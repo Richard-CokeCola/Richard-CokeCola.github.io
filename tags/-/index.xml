@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>  on Richard&#39;s sogni d&#39;oro</title>
+    <link>http://localhost:1313/tags/-/</link>
+    <description>Recent content in   on Richard&#39;s sogni d&#39;oro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jun 2022 13:56:47 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/-/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Re_evaluate</title>
+      <link>http://localhost:1313/posts/re_evaluate/</link>
+      <pubDate>Tue, 28 Jun 2022 13:56:47 +0800</pubDate>
+      <guid>http://localhost:1313/posts/re_evaluate/</guid>
+      <description>&lt;p&gt;​&#x9;其实事情很简单。我觉得她对我有很强烈的吸引力，而且符合了我心里的对我有吸引力的三条标准。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Emergency_storage</title>
+      <link>http://localhost:1313/posts/emergency_storage/</link>
+      <pubDate>Wed, 13 Apr 2022 14:44:46 +0800</pubDate>
+      <guid>http://localhost:1313/posts/emergency_storage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Life</title>
+      <link>http://localhost:1313/posts/life/</link>
+      <pubDate>Tue, 27 Jul 2021 14:39:09 +0800</pubDate>
+      <guid>http://localhost:1313/posts/life/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Ref:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://immwind.com/google-analytics-for-hugo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://immwind.com/google-analytics-for-hugo/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

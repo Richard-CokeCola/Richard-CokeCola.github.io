@@ -10,7 +10,7 @@
 
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.146.4">
 
 
 
@@ -19,6 +19,11 @@
 
 <script data-ad-client="ca-pub-3246815983951661" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+
+  
+    
+    <link rel="stylesheet" href="https://richard-cokecola.github.io/css/chat.css">
+  
 
 
 <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -127,89 +132,88 @@
 <p><strong>Firsty, to start the system on Jetson developer kit, write image to microSD card.</strong></p>
 <p>Download the official image file and write it in the microSD card. You can go check <a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit" title="Nvidia tutorial"  target="_blank" rel="noopener">Nvidia official set up tutorial</a> for more information.</p>
 <h2 id="setting-up-the-enviroment">Setting up the enviroment: <a href="#setting-up-the-enviroment" class="anchor"></a></h2><p><strong>Install virtualenv and virtualenvwrapper:</strong></p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># install pip first since there is no pip pre-installed</span>
-sudo apt-get install python3-pip
-sudo apt-get install python3-setuptools
-python3 -m pip install --upgrade pip setuptools wheel
-sudo pip3 install virtualenv virtualenvwrapper
-</code></pre></div><p><strong>You can also enter administrator mode to avoid typing sudo all the time by using:</strong></p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo -i
-</code></pre></div><p><strong>Modify the enviroment variable:</strong></p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># Install an editor first</span>
-<span style="color:#080;font-style:italic">#you can also choose other editor</span>
-sudo apt-get -y install nano 
-mkdir <span style="color:#b8860b">$HOME</span>/.virtualenvs
-nano ~/.bashrc
-<span style="color:#080;font-style:italic"># Add following into the file</span>
-<span style="color:#a2f">export</span> <span style="color:#b8860b">WORKON_HOME</span><span style="color:#666">=</span><span style="color:#b8860b">$HOME</span>/.virtualenvs
-<span style="color:#a2f">export</span> <span style="color:#b8860b">VIRTUALENVWRAPPER_PYTHON</span><span style="color:#666">=</span>/usr/bin/python3
-<span style="color:#a2f">source</span> /usr/local/bin/virtualenvwrapper.sh
-<span style="color:#080;font-style:italic"># After this, reopen the terminal</span>
-</code></pre></div><p><strong>Set virtual developing enviroment:</strong></p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkvirtualenv yolov5 
-<span style="color:#080;font-style:italic"># A virtual developing enviroment named &#34;yolov5&#34; has been created</span>
-</code></pre></div><p><strong>Start working on the virtual developing enviroment you just created:</strong></p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">workon yolov5
-<span style="color:#080;font-style:italic"># If &#34;(yolov5)&#34; appeared in front of your username, this means it worked</span>
-</code></pre></div><p><strong>Download YOLOv5:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># install pip first since there is no pip pre-installed</span>
+</span></span><span style="display:flex;"><span>sudo apt-get install python3-pip
+</span></span><span style="display:flex;"><span>sudo apt-get install python3-setuptools
+</span></span><span style="display:flex;"><span>python3 -m pip install --upgrade pip setuptools wheel
+</span></span><span style="display:flex;"><span>sudo pip3 install virtualenv virtualenvwrapper
+</span></span></code></pre></div><p><strong>You can also enter administrator mode to avoid typing sudo all the time by using:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo -i
+</span></span></code></pre></div><p><strong>Modify the enviroment variable:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># Install an editor first</span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">#you can also choose other editor</span>
+</span></span><span style="display:flex;"><span>sudo apt-get -y install nano 
+</span></span><span style="display:flex;"><span>mkdir <span style="color:#b8860b">$HOME</span>/.virtualenvs
+</span></span><span style="display:flex;"><span>nano ~/.bashrc
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># Add following into the file</span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f">export</span> <span style="color:#b8860b">WORKON_HOME</span><span style="color:#666">=</span><span style="color:#b8860b">$HOME</span>/.virtualenvs
+</span></span><span style="display:flex;"><span><span style="color:#a2f">export</span> <span style="color:#b8860b">VIRTUALENVWRAPPER_PYTHON</span><span style="color:#666">=</span>/usr/bin/python3
+</span></span><span style="display:flex;"><span><span style="color:#a2f">source</span> /usr/local/bin/virtualenvwrapper.sh
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># After this, reopen the terminal</span>
+</span></span></code></pre></div><p><strong>Set virtual developing enviroment:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkvirtualenv yolov5 
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># A virtual developing enviroment named &#34;yolov5&#34; has been created</span>
+</span></span></code></pre></div><p><strong>Start working on the virtual developing enviroment you just created:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>workon yolov5
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># If &#34;(yolov5)&#34; appeared in front of your username, this means it worked</span>
+</span></span></code></pre></div><p><strong>Download YOLOv5:</strong></p>
 <p>There is one tricky part to run YOLOv5 on Jetson developer kit which is you <strong>MUST USE YOLOV5 V3.1</strong> otherwise it won&rsquo;t work based on my experiments. However, I also found people posted that YOLOv5 master branch worked well on Jetson as well. If you want to try the YOLOv5 master branch:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># install git</span>
-apt-get install git-all -y 
-git clone https://github.com/ultralytics/yolov5.git
-<span style="color:#080;font-style:italic"># Or, you can just download YOLOv5 v3.1 from their website</span>
-<span style="color:#080;font-style:italic"># and copy the folder into the virtual enviroment</span>
-</code></pre></div><p>I used another method and it worded well. First download YOLOv5 v3.1 from <a href="https://github.com/ultralytics/yolov5/archive/refs/tags/v3.1.zip" target="_blank" rel="noopener">YOLOv5 v3.1 offocial website</a> and then copy to your vitual enviroment folder named yolov5.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># install git</span>
+</span></span><span style="display:flex;"><span>apt-get install git-all -y 
+</span></span><span style="display:flex;"><span>git clone https://github.com/ultralytics/yolov5.git
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># Or, you can just download YOLOv5 v3.1 from their website</span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># and copy the folder into the virtual enviroment</span>
+</span></span></code></pre></div><p>I used another method and it worded well. First download YOLOv5 v3.1 from <a href="https://github.com/ultralytics/yolov5/archive/refs/tags/v3.1.zip" target="_blank" rel="noopener">YOLOv5 v3.1 offocial website</a> and then copy to your vitual enviroment folder named yolov5.</p>
 <p><strong>Install all the softwares:</strong></p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># check Jetpack version</span>
-apt-cache show nvidia-jetpack
-<span style="color:#080;font-style:italic"># Install pytorch method 1</span>
-wget https://nvidia.box.com/shared/static/9eptse6jyly1ggt9axbja2yrmj6pbarc.whl -O torch-1.6.0-cp36-cp36m-linux_aarch64.whl
-apt-get install python3-pip libopenblas-base libopenmpi-dev 
-pip3 install Cython
-pip3 install numpy torch-1.6.0-cp36-cp36m-linux_aarch64.whl
-</code></pre></div><p>If there are internet issues, try:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># Install pytorch method 2</span>
-apt-get install python3-pip libopenblas-base libopenmpi-dev 
-pip3 install Cython
-pip3 install numpy
-<span style="color:#080;font-style:italic"># Download torch-1.6.0-cp36-cp36m-linux_aarch64.whl first then </span>
-pip3 install torch-1.6.0-cp36-cp36m-linux_aarch64.whl
-</code></pre></div><p>Install torchvision from source:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic"># If you used torch 1.6, you should use torchvision 0.7</span>
-apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
-git clone --branch v0.7.0 https://github.com/pytorch/vision torchvision
-<span style="color:#a2f">cd</span> torchvision
-<span style="color:#a2f">export</span> <span style="color:#b8860b">BUILD_VERSION</span><span style="color:#666">=</span>0.7.0
-python3 setup.py install 
-<span style="color:#080;font-style:italic"># If having problem here, go see key point 3 below </span>
-<span style="color:#080;font-style:italic"># This will take a while</span>
-<span style="color:#a2f">cd</span> ../
-
-</code></pre></div><p>Install OpenCV:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#080;font-style:italic">#Link native OpenCV to the virtual enviroment</span>
-<span style="color:#080;font-style:italic">#find where the native OpenCV is</span>
-find / -name cv2 
-<span style="color:#080;font-style:italic"># It should be in /usr/lib/python3.6/dist-packages/cv2/python-3.6/</span>
-<span style="color:#080;font-style:italic"># You should find the .so file called &#39;cv2.cpython-36m-aarch64-linux-gnu.so&#39;</span>
-ln -s /usr/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ~/.virtualenvs/<span style="color:#666">{</span>your env<span style="color:#666">}</span>/cv2.cpython-36m-aarch64-linux-gnu.so
-</code></pre></div><p>After this, check if the installation is succeed:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">python
-<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">cv2</span>
-<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">torch</span>
-<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">torchvision</span>
-<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">print</span>(cv2<span style="color:#666">.</span>__version__)
-<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">print</span>(torch<span style="color:#666">.</span>__version__)
-<span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">print</span>(torchvision<span style="color:#666">.</span>__version__)
-
-<span style="color:#080;font-style:italic"># Press Ctrl+z to exit python</span>
-</code></pre></div><p><p class="markdown-image">
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># check Jetpack version</span>
+</span></span><span style="display:flex;"><span>apt-cache show nvidia-jetpack
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># Install pytorch method 1</span>
+</span></span><span style="display:flex;"><span>wget https://nvidia.box.com/shared/static/9eptse6jyly1ggt9axbja2yrmj6pbarc.whl -O torch-1.6.0-cp36-cp36m-linux_aarch64.whl
+</span></span><span style="display:flex;"><span>apt-get install python3-pip libopenblas-base libopenmpi-dev 
+</span></span><span style="display:flex;"><span>pip3 install Cython
+</span></span><span style="display:flex;"><span>pip3 install numpy torch-1.6.0-cp36-cp36m-linux_aarch64.whl
+</span></span></code></pre></div><p>If there are internet issues, try:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># Install pytorch method 2</span>
+</span></span><span style="display:flex;"><span>apt-get install python3-pip libopenblas-base libopenmpi-dev 
+</span></span><span style="display:flex;"><span>pip3 install Cython
+</span></span><span style="display:flex;"><span>pip3 install numpy
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># Download torch-1.6.0-cp36-cp36m-linux_aarch64.whl first then </span>
+</span></span><span style="display:flex;"><span>pip3 install torch-1.6.0-cp36-cp36m-linux_aarch64.whl
+</span></span></code></pre></div><p>Install torchvision from source:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># If you used torch 1.6, you should use torchvision 0.7</span>
+</span></span><span style="display:flex;"><span>apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
+</span></span><span style="display:flex;"><span>git clone --branch v0.7.0 https://github.com/pytorch/vision torchvision
+</span></span><span style="display:flex;"><span><span style="color:#a2f">cd</span> torchvision
+</span></span><span style="display:flex;"><span><span style="color:#a2f">export</span> <span style="color:#b8860b">BUILD_VERSION</span><span style="color:#666">=</span>0.7.0
+</span></span><span style="display:flex;"><span>python3 setup.py install 
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># If having problem here, go see key point 3 below </span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># This will take a while</span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f">cd</span> ../
+</span></span></code></pre></div><p>Install OpenCV:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#080;font-style:italic">#Link native OpenCV to the virtual enviroment</span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">#find where the native OpenCV is</span>
+</span></span><span style="display:flex;"><span>find / -name cv2 
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># It should be in /usr/lib/python3.6/dist-packages/cv2/python-3.6/</span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># You should find the .so file called &#39;cv2.cpython-36m-aarch64-linux-gnu.so&#39;</span>
+</span></span><span style="display:flex;"><span>ln -s /usr/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so ~/.virtualenvs/<span style="color:#666">{</span>your env<span style="color:#666">}</span>/cv2.cpython-36m-aarch64-linux-gnu.so
+</span></span></code></pre></div><p>After this, check if the installation is succeed:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>python
+</span></span><span style="display:flex;"><span><span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">cv2</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">torch</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">torchvision</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f">print</span>(cv2<span style="color:#666">.</span>__version__)
+</span></span><span style="display:flex;"><span><span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f">print</span>(torch<span style="color:#666">.</span>__version__)
+</span></span><span style="display:flex;"><span><span style="color:#666">&gt;&gt;&gt;</span> <span style="color:#a2f">print</span>(torchvision<span style="color:#666">.</span>__version__)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># Press Ctrl+z to exit python</span>
+</span></span></code></pre></div><p><p class="markdown-image">
   <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/env.jpg" alt="env"  title="installation succeed" />
 </p>
 Install the rest:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip3 install matplotlib pillow pyyaml tensorboard tqdm scipy
-</code></pre></div><p>Now, you are ready to run YOLOv5! Let&rsquo;s try running YOLOv5 on defauly images:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">python detect<span style="color:#666">.</span>py <span style="color:#666">--</span>source inference<span style="color:#666">/</span>images<span style="color:#666">/</span> <span style="color:#666">--</span>weights weights<span style="color:#666">/</span>yolov5s<span style="color:#666">.</span>pt
-</code></pre></div><p><strong>Congratulations!</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip3 install matplotlib pillow pyyaml tensorboard tqdm scipy
+</span></span></code></pre></div><p>Now, you are ready to run YOLOv5! Let&rsquo;s try running YOLOv5 on defauly images:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>python detect<span style="color:#666">.</span>py <span style="color:#666">--</span>source inference<span style="color:#666">/</span>images<span style="color:#666">/</span> <span style="color:#666">--</span>weights weights<span style="color:#666">/</span>yolov5s<span style="color:#666">.</span>pt
+</span></span></code></pre></div><p><strong>Congratulations!</strong></p>
 <h2 id="key-points">Key points: <a href="#key-points" class="anchor"></a></h2><ol>
 <li>
 <p>If you have internet issues leads to download failed, try again may help.</p>
@@ -219,32 +223,32 @@ Install the rest:</p>
 </li>
 <li>
 <p>If you use Jetson Navier NX, this link might help to solve &ldquo;illegal instruction (core dumped)&rdquo; problem:</p>
-<p><a href="https://forums.developer.nvidia.com/t/illegal-instruction-core-dumped-xavier/166278">https://forums.developer.nvidia.com/t/illegal-instruction-core-dumped-xavier/166278</a></p>
+<p><a href="https://forums.developer.nvidia.com/t/illegal-instruction-core-dumped-xavier/166278" target="_blank" rel="noopener">https://forums.developer.nvidia.com/t/illegal-instruction-core-dumped-xavier/166278</a></p>
 <p>To be short, just install Numpy 1.19.4 by using:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install <span style="color:#b8860b">numpy</span><span style="color:#666">==</span>1.19.4
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install <span style="color:#b8860b">numpy</span><span style="color:#666">==</span>1.19.4
+</span></span></code></pre></div></li>
 </ol>
 <h2 id="these-are-the-outputs-i-got">These are the outputs I got: <a href="#these-are-the-outputs-i-got" class="anchor"></a></h2><p>Run it on testing images in the project file:
 <p class="markdown-image">
-  <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/IMG_9604.JPG" alt="&amp;lsquo;Jetson output&amp;rsquo;"  title="YOLOv5 running on Jetson nano" />
+  <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/IMG_9604.JPG" alt="&lsquo;Jetson output&rsquo;"  title="YOLOv5 running on Jetson nano" />
 </p>
 Run it on a <a href="https://www.youtube.com/watch?v=wqctLW0Hb_0&amp;t=11s" target="_blank" rel="noopener">Youtube video:</a>
 <p class="markdown-image">
-  <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/jetson-output-car.jpg" alt="&amp;lsquo;Jetson output-car&amp;rsquo;"  title="YOLOv5 running on Jetson nano" />
+  <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/jetson-output-car.jpg" alt="&lsquo;Jetson output-car&rsquo;"  title="YOLOv5 running on Jetson nano" />
 </p>
 Run it on a pre-recorded office video:
 <p class="markdown-image">
-  <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/jetson-output.jpg" alt="&amp;lsquo;Jetson output-office&amp;rsquo;"  title="YOLOv5 running on Jetson nano" />
+  <img src="https://raw.githubusercontent.com/Richard-CokeCola/Richard-CokeCola.github.io/main/images/AI/jetson-output.jpg" alt="&lsquo;Jetson output-office&rsquo;"  title="YOLOv5 running on Jetson nano" />
 </p></p>
 <h2 id="references"><em>References:</em> <a href="#references" class="anchor"></a></h2><ol>
-<li><em>Pytorch深度学习框架X NVIDIA JetsonNano应用-YOLOv5辨识台湾实时路况</em> <a href="https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn">https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn</a></li>
-<li><em>How to Run YoloV5 Real-Time Object Detection on Pytorch with Docker on NVIDIA Jetson Modules</em> <a href="https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules">https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules</a></li>
-<li><a href="https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-nano/76">https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-nano/76</a></li>
-<li><em>Getting Started with Jetson Nano Developer Kit</em> <a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit">https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit</a></li>
-<li><em>Jetson Nano 入门教程3 - 必备软件安装Pytorch TensorFlow</em> <a href="https://zhuanlan.zhihu.com/p/342504190">https://zhuanlan.zhihu.com/p/342504190</a></li>
-<li><a href="https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-nano/76">https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-nano/76</a></li>
-<li>More method to install torchvision: <a href="https://shliang.blog.csdn.net/article/details/109862917">https://shliang.blog.csdn.net/article/details/109862917</a></li>
-<li><em>YOLOv5 TensorRT Benchmark for Jetson AGX Xavier and NVIDIA Laptop</em> <a href="https://www.forecr.io/blogs/ai-algorithms/yolov5-tensorrt-benchmark-for-jetson-agx-xavier-and-nvidia-laptop">https://www.forecr.io/blogs/ai-algorithms/yolov5-tensorrt-benchmark-for-jetson-agx-xavier-and-nvidia-laptop</a></li>
+<li><em>Pytorch深度学习框架X NVIDIA JetsonNano应用-YOLOv5辨识台湾实时路况</em> <a href="https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn" target="_blank" rel="noopener">https://www.rs-online.com/designspark/pytorchx-nvidia-jetsonnano-yolov5-1-cn</a></li>
+<li><em>How to Run YoloV5 Real-Time Object Detection on Pytorch with Docker on NVIDIA Jetson Modules</em> <a href="https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules" target="_blank" rel="noopener">https://www.forecr.io/blogs/ai-algorithms/how-to-run-yolov5-real-time-object-detection-on-pytorch-with-docker-on-nvidia-jetson-modules</a></li>
+<li><a href="https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-nano/76" target="_blank" rel="noopener">https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-nano/76</a></li>
+<li><em>Getting Started with Jetson Nano Developer Kit</em> <a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit" target="_blank" rel="noopener">https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit</a></li>
+<li><em>Jetson Nano 入门教程3 - 必备软件安装Pytorch TensorFlow</em> <a href="https://zhuanlan.zhihu.com/p/342504190" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/342504190</a></li>
+<li><a href="https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-nano/76" target="_blank" rel="noopener">https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-nano/76</a></li>
+<li>More method to install torchvision: <a href="https://shliang.blog.csdn.net/article/details/109862917" target="_blank" rel="noopener">https://shliang.blog.csdn.net/article/details/109862917</a></li>
+<li><em>YOLOv5 TensorRT Benchmark for Jetson AGX Xavier and NVIDIA Laptop</em> <a href="https://www.forecr.io/blogs/ai-algorithms/yolov5-tensorrt-benchmark-for-jetson-agx-xavier-and-nvidia-laptop" target="_blank" rel="noopener">https://www.forecr.io/blogs/ai-algorithms/yolov5-tensorrt-benchmark-for-jetson-agx-xavier-and-nvidia-laptop</a></li>
 </ol>
 
     </div>
@@ -265,8 +269,8 @@ Run it on a pre-recorded office video:
   <div id="comment">
     
     <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
+<script>
+    window.disqus_config = function () {
     
     
     
@@ -293,31 +297,6 @@ Run it on a pre-recorded office video:
     </main>
     
     <footer id="footer">
-    
-        <div id="social">
-
-
-    <a class="symbol" href="https://github.com/Richard-CokeCola/" rel="me" target="_blank">
-        
-        <svg fill="#bbbbbb" width="28" height="28"  viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    
-    <title>Github</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Social-Icons---Rounded-Black" transform="translate(-264.000000, -939.000000)">
-            <g id="Github" transform="translate(264.000000, 939.000000)">
-                <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" fill="#bbbbbb"></path>
-                <path d="M35.9985,13 C22.746,13 12,23.7870921 12,37.096644 C12,47.7406712 18.876,56.7718301 28.4145,59.9584121 C29.6145,60.1797862 30.0525,59.4358488 30.0525,58.7973276 C30.0525,58.2250681 30.0315,56.7100863 30.0195,54.6996482 C23.343,56.1558981 21.9345,51.4693938 21.9345,51.4693938 C20.844,48.6864054 19.2705,47.9454799 19.2705,47.9454799 C17.091,46.4500754 19.4355,46.4801943 19.4355,46.4801943 C21.843,46.6503662 23.1105,48.9634994 23.1105,48.9634994 C25.2525,52.6455377 28.728,51.5823398 30.096,50.9649018 C30.3135,49.4077535 30.9345,48.3460615 31.62,47.7436831 C26.2905,47.1352808 20.688,45.0691228 20.688,35.8361671 C20.688,33.2052792 21.6225,31.0547881 23.1585,29.3696344 C22.911,28.7597262 22.0875,26.3110578 23.3925,22.9934585 C23.3925,22.9934585 25.4085,22.3459017 29.9925,25.4632101 C31.908,24.9285993 33.96,24.6620468 36.0015,24.6515052 C38.04,24.6620468 40.0935,24.9285993 42.0105,25.4632101 C46.5915,22.3459017 48.603,22.9934585 48.603,22.9934585 C49.9125,26.3110578 49.089,28.7597262 48.8415,29.3696344 C50.3805,31.0547881 51.309,33.2052792 51.309,35.8361671 C51.309,45.0917119 45.6975,47.1292571 40.3515,47.7256117 C41.2125,48.4695491 41.9805,49.9393525 41.9805,52.1877301 C41.9805,55.4089489 41.9505,58.0067059 41.9505,58.7973276 C41.9505,59.4418726 42.3825,60.1918338 43.6005,59.9554002 C53.13,56.7627944 60,47.7376593 60,37.096644 C60,23.7870921 49.254,13 35.9985,13" fill="#FFFFFF"></path>
-            </g>
-        </g>
-    </g>
-</svg>
-    </a>
-
-
-</div>
-
     
 
     <div class="copyright">

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Home  on Richard&#39;s sogni d&#39;oro</title>
+    <link>https://richard-cokecola.github.io/tags/-home-/</link>
+    <description>Recent content in  Home  on Richard&#39;s sogni d&#39;oro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 Mar 2023 16:55:12 +0800</lastBuildDate>
+    <atom:link href="https://richard-cokecola.github.io/tags/-home-/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Whole-house networking solution based on software router </title>
+      <link>https://richard-cokecola.github.io/posts/whole-house-networking-solution-based-on-software-router/</link>
+      <pubDate>Fri, 31 Mar 2023 16:55:12 +0800</pubDate>
+      <guid>https://richard-cokecola.github.io/posts/whole-house-networking-solution-based-on-software-router/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract &lt;a href=&#34;#abstract&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The objective of this project is to establish a functional whole-house networking system within a multiple-bedroom apartment, which presents two primary challenges. The first challenge concerns the well-documented issue of internet firewalls, which requires additional measures to enable access to fundamental web services like Google, YouTube, Netflix, and OpenAI. The second challenge relates to the diminishing Wi-Fi signal as it penetrates through the walls of the bedrooms, rendering a single router insufficient for the entire house. The aim of this project is to address these issues comprehensively and provide a comprehensive solution.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

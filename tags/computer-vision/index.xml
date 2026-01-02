@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Vision on Richard&#39;s sogni d&#39;oro</title>
+    <link>http://localhost:1313/tags/computer-vision/</link>
+    <description>Recent content in Computer Vision on Richard&#39;s sogni d&#39;oro</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Jul 2021 12:43:09 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Enhancing YOLOv5</title>
+      <link>http://localhost:1313/posts/enhancing-yolov5/</link>
+      <pubDate>Mon, 05 Jul 2021 12:43:09 +0800</pubDate>
+      <guid>http://localhost:1313/posts/enhancing-yolov5/</guid>
+      <description>&lt;h2 id=&#34;training-yolo&#34;&gt;Training YOLO &lt;a href=&#34;#training-yolo&#34; class=&#34;anchor&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;&#xA;&lt;li&gt;Use transfer learning. This can improve the model performance significantly.&lt;/li&gt;&#xA;&lt;li&gt;Augmentations, including RandomSizedCrop, HueSaturationValue, RandomBrightnessContrast, RandomRotate90, Flip, Cutout, etc. This is at yolov5/data/hyp.scratch.yml&lt;/li&gt;&#xA;&lt;li&gt;Use Cross-validation.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;[1]  &lt;a href=&#34;https://towardsdatascience.com/advanced-yolov5-tutorial-enhancing-yolov5-with-weighted-boxes-fusion-3bead5b71688&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://towardsdatascience.com/advanced-yolov5-tutorial-enhancing-yolov5-with-weighted-boxes-fusion-3bead5b71688&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
